@@ -1,0 +1,32 @@
+{
+  "id": "B13",
+  "title": "Bài 13",
+  "words": [
+    { "h": "同", "p": "tóng", "m": "cùng; giống nhau" },
+    { "h": "屋子", "p": "wūzi", "m": "căn nhà; căn phòng" },
+    { "h": "室友", "p": "shìyǒu", "m": "bạn cùng phòng" },
+    { "h": "行李", "p": "xíngli", "m": "hành lý" },
+    { "h": "李子", "p": "lǐzi", "m": "quả mận" },
+    { "h": "重", "p": "zhòng", "m": "nặng" },
+    { "h": "车", "p": "chē", "m": "xe" },
+    { "h": "轻", "p": "qīng", "m": "nhẹ" },
+    { "h": "看", "p": "kàn", "m": "nhìn; xem; đọc" },
+    { "h": "认识", "p": "rènshi", "m": "biết; quen; nhận ra" },
+    { "h": "高兴", "p": "gāoxìng", "m": "vui; vui mừng" },
+    { "h": "黑", "p": "hēi", "m": "đen; tối" },
+    { "h": "点", "p": "diǎn", "m": "điểm; giờ; một chút" },
+    { "h": "点名", "p": "diǎnmíng", "m": "điểm danh" },
+    { "h": "点菜", "p": "diǎncài", "m": "gọi món" },
+    { "h": "分", "p": "fēn", "m": "phút; chia; phần" },
+    { "h": "红", "p": "hóng", "m": "đỏ" },
+    { "h": "相", "p": "xiāng", "m": "lẫn nhau; tương-" },
+    { "h": "想", "p": "xiǎng", "m": "nghĩ; muốn; nhớ" },
+    { "h": "箱子", "p": "xiāngzi", "m": "cái hòm; cái va-li" },
+    { "h": "相信", "p": "xiāngxìn", "m": "tin; tin tưởng" },
+    { "h": "真的", "p": "zhēnde", "m": "thật; thật sự" },
+    { "h": "衣服", "p": "yīfu", "m": "quần áo" },
+    { "h": "件", "p": "jiàn", "m": "chiếc; cái (lượng từ cho quần áo, sự việc)" },
+    { "h": "药", "p": "yào", "m": "thuốc" },
+    { "h": "些", "p": "xiē", "m": "một vài; một ít" }
+  ]
+}

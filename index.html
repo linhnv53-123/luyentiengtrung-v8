@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+  <meta name="theme-color" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Luyện chữ Hán">
+  <meta name="format-detection" content="telephone=no">
+  <title>Luyện nhớ chữ Hán · V9</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+  <noscript>
+    <div class="noscript">Trang này cần JavaScript để hoạt động. Hãy mở bằng Safari/Chrome từ một địa chỉ HTTPS, không mở bằng bản xem trước trong ứng dụng Files.</div>
+  </noscript>
+
+  <div class="app-shell" id="appShell">
+    <header class="app-header">
+      <div class="brand-block">
+        <div class="brand-icon" aria-hidden="true">汉</div>
+        <div>
+          <h1>Luyện nhớ chữ Hán</h1>
+          <p>Pinyin · từ điển · viết tay · sổ tay cá nhân</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <button type="button" class="button button-secondary mobile-settings-button" id="settingsToggleButton" aria-expanded="false">Thiết lập</button>
+        <button type="button" class="button button-secondary" id="helpButton">Hướng dẫn</button>
+        <button type="button" class="button button-secondary" id="manageDataButton">Quản lý dữ liệu</button>
+      </div>
+    </header>
+
+    <main>
+
+    <nav class="view-tabs panel" aria-label="Chức năng chính">
+      <button type="button" class="view-tab is-active" data-view-target="practice" aria-selected="true">✍️ Luyện tập</button>
+      <button type="button" class="view-tab" data-view-target="dictionary" aria-selected="false">🔎 Từ điển</button>
+      <button type="button" class="view-tab" data-view-target="analysis" aria-selected="false">🧩 Phân tích chữ</button>
+      <button type="button" class="view-tab" data-view-target="pinyin" aria-selected="false">🔤 Bảng Pinyin</button>
+      <button type="button" class="view-tab" data-view-target="notes" aria-selected="false">📝 Sổ tay</button>
+    </nav>
+
+    <section class="app-view is-active" id="practiceView" data-view="practice">
+      <section class="control-panel panel" aria-label="Thiết lập lượt học">
+        <div class="form-field">
+          <label for="lessonSelect">Phạm vi bài học</label>
+          <select id="lessonSelect"></select>
+        </div>
+        <div class="form-field">
+          <label for="modeSelect">Kiểu câu hỏi</label>
+          <select id="modeSelect">
+            <option value="cueToHanzi">Pinyin + nghĩa → chữ Hán</option>
+            <option value="hanziToCue">Chữ Hán → pinyin + nghĩa</option>
+            <option value="mixed">Trộn hai dạng</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="orderSelect">Thứ tự</label>
+          <select id="orderSelect">
+            <option value="smart">Ưu tiên từ cần ôn</option>
+            <option value="due">Từ đến hạn trước</option>
+            <option value="random">Ngẫu nhiên</option>
+            <option value="original">Theo thứ tự bài</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="limitSelect">Số từ trong lượt</label>
+          <select id="limitSelect">
+            <option value="10">10</option>
+            <option value="20" selected>20</option>
+            <option value="30">30</option>
+            <option value="50">50</option>
+            <option value="all">Tất cả</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="actionSelect">Thao tác</label>
+          <select id="actionSelect">
+            <option value="continue">Tiếp tục lượt hiện tại</option>
+            <option value="restart">Bắt đầu lại lượt</option>
+            <option value="resetScope">Xóa tiến độ phạm vi này</option>
+          </select>
+        </div>
+      </section>
+
+      <section class="stats-grid" aria-label="Tiến độ">
+        <div class="stat-card stat-wide"><strong id="phaseText">Chưa bắt đầu</strong><span>Giai đoạn</span></div>
+        <div class="stat-card"><strong id="positionText">0/0</strong><span>Tiến độ</span></div>
+        <div class="stat-card"><strong id="knownText">0</strong><span>Nhớ ngay lượt đầu</span></div>
+        <div class="stat-card"><strong id="pendingText">0</strong><span>Còn cần ôn</span></div>
+        <div class="stat-card"><strong id="streakText">0</strong><span>Chuỗi đúng</span></div>
+      </section>
+
+      <section class="practice-workspace panel" id="practiceWorkspace">
+        <div class="prompt-column" id="studyCard">
+          <div class="card-topline">
+            <span class="lesson-badge" id="lessonBadge">Bài học</span>
+            <span id="memoryInfo">Chưa có tiến độ</span>
+          </div>
+
+          <div class="prompt-area" id="promptArea">
+            <div class="prompt-label" id="promptLabel">Hãy viết chữ Hán</div>
+            <div class="hanzi-prompt" id="hanziPrompt" hidden></div>
+            <div class="cue-stack" id="cueStack">
+              <div class="cue-row">
+                <span class="cue-name">Pinyin</span>
+                <strong class="cue-pinyin" id="pinyinPrompt"></strong>
+              </div>
+              <div class="cue-row">
+                <span class="cue-name">Nghĩa</span>
+                <strong class="cue-meaning" id="meaningPrompt"></strong>
+              </div>
+            </div>
+            <p class="prompt-note" id="promptNote">Dựa vào cả cách đọc và nghĩa để xác định đúng từ.</p>
+            <button type="button" class="button button-secondary speak-button" id="speakButton">🔊 Phát âm</button>
+
+            <div class="answer-area" id="answerArea" hidden>
+              <div class="answer-hanzi" id="answerHanzi"></div>
+              <div class="answer-pinyin" id="answerPinyin"></div>
+              <div class="answer-meaning" id="answerMeaning"></div>
+            </div>
+
+            <div class="complete-box" id="completeBox" hidden>
+              <h2>Hoàn thành lượt học</h2>
+              <p id="completeSummary"></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="writing-column">
+          <div class="writing-header">
+            <div>
+              <h2>Bảng viết</h2>
+              <p id="padHint">Mỗi chữ Hán có một ô riêng</p>
+            </div>
+            <span>Viết bằng ngón tay hoặc chuột</span>
+          </div>
+          <div class="pad-grid" id="padGrid" aria-live="polite"></div>
+          <div class="pad-actions">
+            <button type="button" class="button button-secondary" id="undoButton">↶ Hoàn tác</button>
+            <button type="button" class="button button-secondary" id="clearButton">Xóa bảng</button>
+          </div>
+          <p class="writing-tip">Viết xong rồi mới bấm “Hiện đáp án”.</p>
+        </div>
+
+        <div class="study-actions" id="studyActions">
+          <button type="button" class="button button-primary reveal-button" id="revealButton">Hiện đáp án <span class="shortcut">Space</span></button>
+          <div class="rating-grid" id="ratingGrid" hidden>
+            <button type="button" class="rating rating-again" data-rating="again"><strong>Lại</strong><span>1</span></button>
+            <button type="button" class="rating rating-hard" data-rating="hard"><strong>Khó</strong><span>2</span></button>
+            <button type="button" class="rating rating-good" data-rating="good"><strong>Tốt</strong><span>3</span></button>
+            <button type="button" class="rating rating-easy" data-rating="easy"><strong>Rất tốt</strong><span>4</span></button>
+          </div>
+          <div class="secondary-action-grid" id="secondaryActions">
+            <button type="button" class="button button-secondary" id="skipButton">Bỏ qua</button>
+            <button type="button" class="button button-secondary" id="restartButton">Bắt đầu lượt mới</button>
+          </div>
+          <div class="complete-actions" id="completeActions" hidden>
+            <button type="button" class="button button-secondary" id="repeatButton">Luyện lại lượt vừa rồi</button>
+            <button type="button" class="button button-primary" id="newSessionButton">Bắt đầu lượt mới</button>
+          </div>
+        </div>
+      </section>
+
+    </section>
+
+    <section class="app-view" id="dictionaryView" data-view="dictionary" hidden>
+      <div class="lookup-layout">
+        <section class="panel lookup-panel">
+          <div class="tool-heading">
+            <div>
+              <h2>Từ điển bài học</h2>
+              <p>Tra chữ Hán, pinyin hoặc nghĩa tiếng Việt. Tìm kiếm tiếng Việt không phân biệt dấu.</p>
+            </div>
+          </div>
+          <div class="search-box">
+            <label class="sr-only" for="dictionarySearchInput">Từ cần tra</label>
+            <input id="dictionarySearchInput" type="search" autocomplete="off" placeholder="Ví dụ: 喜欢, xihuan, thích…">
+            <button type="button" class="button button-secondary" id="dictionaryClearButton">Xóa</button>
+          </div>
+          <div class="result-summary" id="dictionaryResultCount">0 mục từ</div>
+          <div class="dictionary-results" id="dictionaryResults" aria-live="polite"></div>
+        </section>
+
+        <aside class="panel dictionary-detail" id="dictionaryDetail" aria-live="polite">
+          <div class="empty-state">Chọn một kết quả để xem chi tiết.</div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="app-view" id="analysisView" data-view="analysis" hidden>
+      <section class="panel analysis-panel">
+        <div class="tool-heading">
+          <div>
+            <h2>Phân tích chữ Hán</h2>
+            <p>Xem bộ thủ chính, cấu trúc IDS, thành phần đồ họa và thành phần gợi nghĩa/gợi âm khi nguồn có dữ liệu.</p>
+          </div>
+          <span class="character-data-status" id="characterDataStatus">Đang tải dữ liệu phân tích…</span>
+        </div>
+        <div class="analysis-search">
+          <label class="sr-only" for="analysisInput">Chữ hoặc từ cần phân tích</label>
+          <input id="analysisInput" type="text" autocomplete="off" placeholder="Ví dụ: 妈, 语言, 生病…">
+          <button type="button" class="button button-primary" id="analysisButton">Phân tích</button>
+        </div>
+        <div class="analysis-note">
+          <strong>Lưu ý:</strong> “Bộ thủ chính” là mục tra từ điển; “thành phần” là cách tách hình dạng. Thành phần không phải lúc nào cũng trực tiếp giải thích nghĩa hoặc cách đọc của chữ.
+        </div>
+        <div class="analysis-results" id="analysisResults" aria-live="polite"></div>
+      </section>
+    </section>
+
+    <section class="app-view" id="pinyinView" data-view="pinyin" hidden>
+      <section class="panel reference-panel">
+        <div class="tool-heading reference-heading">
+          <div>
+            <h2>Bảng thanh mẫu và vận mẫu</h2>
+            <p>Mỗi mục có một ô trống để bạn tự ghi cách đọc thực tế bằng mô tả tiếng Việt. Nội dung được tự động lưu trên thiết bị.</p>
+          </div>
+          <div class="reference-heading-actions">
+            <span class="reference-progress" id="pinyinProgressText">Đã ghi chú 0 mục</span>
+            <button type="button" class="button button-danger compact-button" id="clearPinyinNotesButton">Xóa mô tả</button>
+          </div>
+        </div>
+
+        <div class="pinyin-reference-note">
+          <strong>Gợi ý sử dụng:</strong> hãy viết theo cách bạn thực sự nghe và phát âm, ví dụ “b gần p tiếng Việt nhưng không bật hơi”. Các giáo trình có thể sắp xếp y, w và một số vận mẫu đặc biệt ở nhóm khác nhau.
+        </div>
+
+        <div class="pinyin-columns">
+          <section class="pinyin-section" aria-labelledby="initialsTitle">
+            <div class="pinyin-section-heading">
+              <h3 id="initialsTitle">Thanh mẫu</h3>
+              <span>Âm đầu</span>
+            </div>
+            <div id="initialsList" class="pinyin-groups"></div>
+          </section>
+
+          <section class="pinyin-section" aria-labelledby="finalsTitle">
+            <div class="pinyin-section-heading">
+              <h3 id="finalsTitle">Vận mẫu</h3>
+              <span>Phần vần</span>
+            </div>
+            <div id="finalsList" class="pinyin-groups"></div>
+          </section>
+        </div>
+        <p class="local-save-status" id="pinyinSaveStatus">Nội dung được lưu riêng trên trình duyệt hiện tại.</p>
+      </section>
+    </section>
+
+    <section class="app-view" id="notesView" data-view="notes" hidden>
+      <div class="notes-layout">
+        <section class="panel notes-editor-panel" id="notesEditorPanel">
+          <div class="tool-heading">
+            <div>
+              <h2 id="noteEditorTitle">Thêm ghi chú mới</h2>
+              <p>Lưu công thức, quy tắc phát âm, cấu trúc câu và ví dụ của riêng bạn.</p>
+            </div>
+          </div>
+
+          <div class="notes-editor-grid">
+            <div class="form-field">
+              <label for="noteCategoryInput">Phân loại</label>
+              <select id="noteCategoryInput"></select>
+            </div>
+            <div class="form-field">
+              <label for="noteTitleInput">Tiêu đề</label>
+              <input id="noteTitleInput" type="text" autocomplete="off" placeholder="Ví dụ: Quy tắc biến điệu của 不">
+            </div>
+            <div class="form-field full-width">
+              <label for="noteContentInput">Công thức hoặc lưu ý</label>
+              <textarea id="noteContentInput" rows="7" placeholder="Ghi công thức, cách dùng, điều cần tránh…"></textarea>
+            </div>
+            <div class="form-field full-width">
+              <label for="noteExampleInput">Ví dụ minh họa (không bắt buộc)</label>
+              <textarea id="noteExampleInput" rows="4" placeholder="Ví dụ câu tiếng Trung, pinyin và nghĩa…"></textarea>
+            </div>
+          </div>
+
+          <div class="note-editor-actions">
+            <button type="button" class="button button-primary" id="saveNoteButton">Lưu ghi chú</button>
+            <button type="button" class="button button-secondary" id="cancelNoteButton">Xóa nội dung đang nhập</button>
+            <button type="button" class="button button-danger" id="deleteNoteButton" hidden>Xóa ghi chú này</button>
+          </div>
+        </section>
+
+        <section class="panel notes-list-panel">
+          <div class="notes-list-header">
+            <div>
+              <h2>Sổ tay của tôi</h2>
+              <p id="notesCountText">0 ghi chú</p>
+            </div>
+            <button type="button" class="button button-primary" id="newNoteButton">+ Ghi chú mới</button>
+          </div>
+
+          <div class="notes-search-row">
+            <label class="sr-only" for="notesSearchInput">Tìm ghi chú</label>
+            <input id="notesSearchInput" type="search" autocomplete="off" placeholder="Tìm theo tiêu đề, nội dung hoặc phân loại…">
+          </div>
+
+          <div class="notebook-backup-row">
+            <button type="button" class="button button-secondary" id="exportNotebookButton">Xuất sổ tay JSON</button>
+            <label class="button button-secondary file-button">Nhập sổ tay JSON
+              <input id="notebookImportInput" type="file" accept=".json,application/json">
+            </label>
+            <span>Dùng file sao lưu để chuyển ghi chú sang thiết bị khác.</span>
+          </div>
+
+          <section class="github-notebook-sync" aria-labelledby="githubNotebookSyncTitle">
+            <div class="github-notebook-sync-heading">
+              <div>
+                <h3 id="githubNotebookSyncTitle">Đồng bộ sổ tay với GitHub</h3>
+                <p id="githubNotebookSyncStatus" data-state="idle">Chưa thiết lập token GitHub.</p>
+              </div>
+              <span class="sync-badge" id="githubNotebookSyncBadge" data-state="idle">Chưa cấu hình</span>
+            </div>
+
+            <div class="sync-security-note">
+              <strong>Lưu ý bảo mật:</strong> nên dùng một repository <strong>Private</strong> riêng cho sổ tay. Nếu dùng repository Public, file ghi chú cũng có thể được người khác đọc. Token chỉ được lưu dưới dạng mã hóa trên thiết bị và không được ghi vào source code.
+            </div>
+
+            <details class="github-sync-settings">
+              <summary>Thiết lập kết nối GitHub</summary>
+              <div class="github-sync-form">
+                <div class="form-field">
+                  <label for="githubSyncOwnerInput">Tài khoản GitHub</label>
+                  <input id="githubSyncOwnerInput" type="text" autocomplete="off" placeholder="linhnv53-123">
+                </div>
+                <div class="form-field">
+                  <label for="githubSyncRepoInput">Repository lưu sổ tay</label>
+                  <input id="githubSyncRepoInput" type="text" autocomplete="off" placeholder="hanzi-notes-backup">
+                </div>
+                <div class="form-field">
+                  <label for="githubSyncBranchInput">Branch</label>
+                  <input id="githubSyncBranchInput" type="text" autocomplete="off" value="main">
+                </div>
+                <div class="form-field">
+                  <label for="githubSyncPathInput">Đường dẫn file</label>
+                  <input id="githubSyncPathInput" type="text" autocomplete="off" value="user-data/study-notes.json">
+                </div>
+                <div class="form-field full-width">
+                  <label for="githubSyncTokenInput">Fine-grained personal access token</label>
+                  <input id="githubSyncTokenInput" type="password" autocomplete="new-password" placeholder="Chỉ cần nhập khi thiết lập hoặc thay token">
+                  <small>Token chỉ cần quyền Repository contents: Read and write cho đúng repository đã chọn.</small>
+                </div>
+                <div class="form-field full-width">
+                  <label for="githubSyncPassphraseInput">Mật khẩu mã hóa / mở khóa token</label>
+                  <input id="githubSyncPassphraseInput" type="password" autocomplete="current-password" placeholder="Ít nhất 6 ký tự — không được lưu lên GitHub">
+                  <small>Bạn cần nhập lại mật khẩu này sau mỗi lần đóng hoàn toàn ứng dụng.</small>
+                </div>
+                <div class="form-field">
+                  <label for="githubSyncIntervalSelect">Chu kỳ kiểm tra khi ứng dụng đang mở</label>
+                  <select id="githubSyncIntervalSelect">
+                    <option value="5">5 phút</option>
+                    <option value="15" selected>15 phút</option>
+                    <option value="30">30 phút</option>
+                    <option value="60">60 phút</option>
+                  </select>
+                </div>
+                <div class="sync-checkboxes">
+                  <label><input id="githubSyncAutoCheckbox" type="checkbox" checked> Tự đồng bộ định kỳ</label>
+                  <label><input id="githubSyncOnChangeCheckbox" type="checkbox" checked> Đồng bộ sau khi ngừng chỉnh sửa khoảng 45 giây</label>
+                </div>
+              </div>
+              <div class="github-sync-actions">
+                <button type="button" class="button button-primary" id="githubNotebookSaveConnectionButton">Lưu thiết lập</button>
+                <button type="button" class="button button-secondary" id="githubNotebookUnlockButton">Mở khóa</button>
+                <button type="button" class="button button-primary" id="githubNotebookSyncNowButton" disabled>Đồng bộ ngay</button>
+                <button type="button" class="button button-danger" id="githubNotebookDisconnectButton">Ngắt kết nối</button>
+              </div>
+            </details>
+            <p class="sync-limit-note">Trên iPhone, website không thể chạy định kỳ khi Safari/Chrome đã đóng. Đồng bộ tự động hoạt động khi ứng dụng đang mở và token đã được mở khóa.</p>
+          </section>
+
+          <div class="notes-list" id="notesList" aria-live="polite"></div>
+        </section>
+      </div>
+    </section>
+    </main>
+  </div>
+
+  <div class="modal-backdrop" id="dataModal" hidden aria-hidden="true">
+    <section class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="dataModalTitle">
+      <div class="modal-header">
+        <div>
+          <h2 id="dataModalTitle">Quản lý dữ liệu bài học</h2>
+          <p>Dữ liệu GitHub tự đồng bộ; thay đổi trong cửa sổ này chỉ lưu trên thiết bị hiện tại.</p>
+        </div>
+        <button type="button" class="icon-button" id="closeDataButton" aria-label="Đóng">×</button>
+      </div>
+
+      <div class="github-sync-box" id="githubSyncBox" data-source="loading">
+        <div>
+          <strong>Dữ liệu bài học trên GitHub</strong>
+          <p id="githubSyncStatus">Đang kiểm tra dữ liệu…</p>
+          <small>Để thêm bài mới cho mọi thiết bị, chỉ cần tải một file <code>B14.json</code> hoặc <code>B14.txt</code> vào thư mục <code>data/lessons</code> trên GitHub. Không sửa <code>lessons.json</code>, <code>default-data.js</code> hay <code>sw.js</code>.</small>
+        </div>
+        <button type="button" class="button button-primary" id="syncGithubButton">Kiểm tra bài mới</button>
+      </div>
+
+      <div class="data-editor-grid">
+        <div class="form-field full-width">
+          <label for="editLessonSelect">Bài đang chỉnh sửa</label>
+          <select id="editLessonSelect"></select>
+        </div>
+        <div class="form-field">
+          <label for="lessonIdInput">Mã bài</label>
+          <input id="lessonIdInput" type="text" autocomplete="off" placeholder="B13">
+        </div>
+        <div class="form-field">
+          <label for="lessonTitleInput">Tên bài</label>
+          <input id="lessonTitleInput" type="text" autocomplete="off" placeholder="Bài 13">
+        </div>
+        <div class="form-field full-width">
+          <label for="lessonWordsInput">Từ vựng — mỗi dòng: chữ Hán | pinyin | nghĩa</label>
+          <textarea id="lessonWordsInput" spellcheck="false"></textarea>
+        </div>
+      </div>
+
+      <div class="modal-button-row">
+        <button type="button" class="button button-primary" id="saveLessonButton">Lưu bài</button>
+        <button type="button" class="button button-secondary" id="newLessonButton">Tạo bài mới</button>
+        <button type="button" class="button button-danger" id="deleteLessonButton">Xóa bài</button>
+      </div>
+
+      <div class="data-divider"></div>
+
+      <div class="import-row">
+        <div class="form-field">
+          <label for="importModeSelect">Khi nhập JSON</label>
+          <select id="importModeSelect">
+            <option value="merge">Gộp / cập nhật theo mã bài</option>
+            <option value="replace">Thay toàn bộ dữ liệu hiện tại</option>
+          </select>
+        </div>
+        <label class="button button-secondary file-button">Nhập JSON/TXT
+          <input id="importFileInput" type="file" accept=".json,.txt,application/json,text/plain">
+        </label>
+        <button type="button" class="button button-secondary" id="exportDataButton">Xuất toàn bộ JSON</button>
+        <button type="button" class="button button-secondary" id="resetDataButton">Khôi phục dữ liệu mặc định</button>
+      </div>
+
+      <div class="format-help">
+        <strong>Định dạng TXT:</strong>
+        <code>学习 | xuéxí | học tập</code>
+        <br>
+        <strong>Định dạng JSON:</strong> đối tượng có trường <code>lessons</code>, mỗi bài gồm <code>id</code>, <code>title</code>, <code>words</code>; mỗi từ gồm <code>h</code>, <code>p</code>, <code>m</code>.
+      </div>
+    </section>
+  </div>
+
+  <div class="modal-backdrop" id="helpModal" hidden aria-hidden="true">
+    <section class="modal-panel help-panel" role="dialog" aria-modal="true" aria-labelledby="helpModalTitle">
+      <div class="modal-header">
+        <div>
+          <h2 id="helpModalTitle">Cách dùng trên iPhone</h2>
+          <p>Trang cần được mở như một website, không phải bản xem trước tệp.</p>
+        </div>
+        <button type="button" class="icon-button" id="closeHelpButton" aria-label="Đóng">×</button>
+      </div>
+      <ol class="help-list">
+        <li>Đưa thư mục này lên GitHub Pages, Netlify hoặc một máy chủ web có HTTPS.</li>
+        <li>Mở địa chỉ HTTPS bằng Safari trên iPhone.</li>
+        <li>Chọn Chia sẻ → Thêm vào Màn hình chính để dùng như ứng dụng.</li>
+        <li>Dữ liệu và tiến độ được lưu riêng trên từng trình duyệt. Hãy xuất JSON để sao lưu.</li>
+      </ol>
+      <div class="runtime-status" id="runtimeStatus"></div>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="data/default-data.js"></script>
+  <script src="js/storage.js"></script>
+  <script src="js/drawing.js"></script>
+  <script src="js/review.js"></script>
+  <script src="js/remote-data.js"></script>
+  <script src="js/data-manager.js"></script>
+  <script src="js/dictionary.js"></script>
+  <script src="js/study-reference.js"></script>
+  <script src="js/github-notebook-sync.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

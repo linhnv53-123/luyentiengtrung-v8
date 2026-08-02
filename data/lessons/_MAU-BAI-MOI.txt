@@ -1,0 +1,7 @@
+# File này chỉ là mẫu và sẽ không được đưa vào dữ liệu vì tên bắt đầu bằng dấu _.
+# Sao chép thành B14.txt, rồi sửa hai dòng bên dưới.
+# id: B14
+# title: Bài 14
+
+学习 | xuéxí | học tập
+汉字 | hànzì | chữ Hán
