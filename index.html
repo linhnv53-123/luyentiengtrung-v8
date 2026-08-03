@@ -375,6 +375,7 @@
                   </select>
                 </div>
                 <div class="sync-checkboxes">
+                  <label><input id="githubSyncRememberSessionCheckbox" type="checkbox" checked> Nhớ mở khóa trong tab/phiên hiện tại</label>
                   <label><input id="githubSyncAutoCheckbox" type="checkbox" checked> Tự đồng bộ định kỳ</label>
                   <label><input id="githubSyncOnChangeCheckbox" type="checkbox" checked> Đồng bộ sau khi ngừng chỉnh sửa khoảng 45 giây</label>
                 </div>
@@ -383,10 +384,13 @@
                 <button type="button" class="button button-primary" id="githubNotebookSaveConnectionButton">Lưu thiết lập</button>
                 <button type="button" class="button button-secondary" id="githubNotebookUnlockButton">Mở khóa</button>
                 <button type="button" class="button button-primary" id="githubNotebookSyncNowButton" disabled>Đồng bộ ngay</button>
+                <button type="button" class="button button-secondary" id="githubNotebookPullButton" disabled>Tải bản GitHub</button>
                 <button type="button" class="button button-danger" id="githubNotebookDisconnectButton">Ngắt kết nối</button>
               </div>
             </details>
-            <p class="sync-limit-note">Trên iPhone, website không thể chạy định kỳ khi Safari/Chrome đã đóng. Đồng bộ tự động hoạt động khi ứng dụng đang mở và token đã được mở khóa.</p>
+            <p class="sync-limit-note"><strong>Đồng bộ ngay</strong> gộp dữ liệu hai chiều. <strong>Tải bản GitHub</strong> dùng bản trên GitHub thay thế sổ tay trên thiết bị hiện tại — hữu ích khi điện thoại vẫn hiển thị note cũ.</p>
+            <p class="sync-limit-note"><strong>Nhớ mở khóa trong tab/phiên hiện tại:</strong> sau khi mở khóa một lần, F5 hoặc tải lại trang trong cùng tab sẽ tự mở khóa và đồng bộ. Khi đóng hoàn toàn tab/trình duyệt, bạn phải nhập lại mật khẩu. Token phiên chỉ nằm trong <code>sessionStorage</code>, không được ghi lên GitHub.</p>
+            <p class="sync-limit-note">Trên iPhone, website không thể chạy định kỳ khi Safari/Chrome đã đóng. Khi mở lại một phiên mới, hãy mở khóa token; ứng dụng sẽ kiểm tra bản GitHub ngay sau khi mở khóa và khi quay lại trang.</p>
           </section>
         </section>
       </details>

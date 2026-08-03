@@ -4,6 +4,7 @@
   var CONFIG_KEY = 'github_notebook_sync_config_v1';
   var TOKEN_KEY = 'github_notebook_sync_token_v1';
   var STATUS_KEY = 'github_notebook_sync_status_v1';
+  var SESSION_TOKEN_KEY = 'github_notebook_sync_session_token_v1';
   var DEFAULT_PATH = 'user-data/study-notes.json';
   var DEFAULT_INTERVAL = 15;
   var API_VERSION = '2022-11-28';
@@ -57,6 +58,7 @@
       intervalMinutes: DEFAULT_INTERVAL,
       autoSync: true,
       syncOnChange: true,
+      rememberSession: true,
       updatedAt: nowIso()
     };
   }
@@ -72,6 +74,7 @@
     if (!config.intervalMinutes) { config.intervalMinutes = DEFAULT_INTERVAL; }
     if (config.autoSync === undefined) { config.autoSync = true; }
     if (config.syncOnChange === undefined) { config.syncOnChange = true; }
+    if (config.rememberSession === undefined) { config.rememberSession = true; }
     encryptedToken = window.HanziStorage.readJSON(TOKEN_KEY, null);
     lastStatus = window.HanziStorage.readJSON(STATUS_KEY, {}) || {};
   }
@@ -85,6 +88,66 @@
     lastStatus = status || {};
     window.HanziStorage.writeJSON(STATUS_KEY, lastStatus);
     renderStatus();
+  }
+
+  function sessionTargetMatches(payload) {
+    return !!payload &&
+      trim(payload.owner) === trim(config.owner) &&
+      trim(payload.repo) === trim(config.repo) &&
+      trim(payload.branch) === trim(config.branch) &&
+      trim(payload.path) === trim(config.path);
+  }
+
+  function clearSessionToken() {
+    try {
+      window.sessionStorage.removeItem(SESSION_TOKEN_KEY);
+    } catch (error) {
+      // sessionStorage có thể bị chặn trong một số chế độ riêng tư.
+    }
+  }
+
+  function saveSessionToken() {
+    if (!config.rememberSession || !unlockedToken) {
+      clearSessionToken();
+      return;
+    }
+    try {
+      window.sessionStorage.setItem(SESSION_TOKEN_KEY, JSON.stringify({
+        token: unlockedToken,
+        owner: config.owner,
+        repo: config.repo,
+        branch: config.branch,
+        path: config.path,
+        savedAt: nowIso()
+      }));
+    } catch (error) {
+      // Không làm hỏng đồng bộ nếu trình duyệt không cho dùng sessionStorage.
+    }
+  }
+
+  function restoreSessionToken() {
+    var raw;
+    var payload;
+    if (!config.rememberSession || !encryptedToken) {
+      clearSessionToken();
+      return false;
+    }
+    try {
+      raw = window.sessionStorage.getItem(SESSION_TOKEN_KEY);
+      if (!raw) {
+        return false;
+      }
+      payload = JSON.parse(raw);
+      if (!payload.token || !sessionTargetMatches(payload)) {
+        clearSessionToken();
+        return false;
+      }
+      unlockedToken = payload.token;
+      return true;
+    } catch (error) {
+      clearSessionToken();
+      return false;
+    }
   }
 
   function arrayBufferToBase64(buffer) {
@@ -282,6 +345,28 @@
     }
   }
 
+
+  function sortedObject(source) {
+    var result = {};
+    Object.keys(source || {}).sort().forEach(function (key) {
+      result[key] = source[key];
+    });
+    return result;
+  }
+
+  function syncSnapshot(payload) {
+    var normalized = window.HanziStudyReference.mergeSyncPayload({}, payload || {});
+    var notes = (normalized.notes || []).slice().sort(function (a, b) {
+      return text(a.id).localeCompare(text(b.id));
+    });
+    return JSON.stringify({
+      pinyinDescriptions: sortedObject(normalized.pinyinDescriptions || {}),
+      pinyinUpdatedAt: sortedObject(normalized.pinyinUpdatedAt || {}),
+      notes: notes,
+      deletedNotes: sortedObject(normalized.deletedNotes || {})
+    });
+  }
+
   function doSync(attempt) {
     var localBefore;
     var merged;
@@ -291,6 +376,11 @@
       merged = window.HanziStudyReference.mergeSyncPayload(localBefore, remote.payload || {});
       window.HanziStudyReference.importSyncState(merged, true);
       merged = window.HanziStudyReference.exportSyncState();
+
+      if (remote.exists && syncSnapshot(merged) === syncSnapshot(remote.payload || {})) {
+        return { uploaded: false, pulled: true };
+      }
+
       merged.syncedAt = nowIso();
       merged.syncTarget = {
         owner: config.owner,
@@ -298,11 +388,52 @@
         branch: config.branch,
         path: config.path
       };
-      return putRemoteFile(merged, remote.sha);
+      return putRemoteFile(merged, remote.sha).then(function (result) {
+        return { uploaded: true, pulled: true, result: result };
+      });
     }).catch(function (error) {
       if (attempt < 2 && /HTTP 409/.test(error.message || '')) {
         return doSync(attempt + 1);
       }
+      throw error;
+    });
+  }
+
+  function pullRemoteNow() {
+    if (syncing) {
+      return Promise.resolve(false);
+    }
+    validateConfig();
+    if (!window.confirm('Tải bản sổ tay trên GitHub và thay thế dữ liệu sổ tay trên thiết bị này?')) {
+      return Promise.resolve(false);
+    }
+    syncing = true;
+    renderStatus('Đang tải bản GitHub…', 'working');
+    return getRemoteFile().then(function (remote) {
+      if (!remote.exists || !remote.payload) {
+        throw new Error('Chưa có file sổ tay trên GitHub.');
+      }
+      window.HanziStudyReference.replaceSyncState(remote.payload, true);
+      dirty = false;
+      saveStatus({
+        ok: true,
+        at: nowIso(),
+        source: 'pull-remote',
+        target: config.owner + '/' + config.repo + '/' + config.path
+      });
+      toast('Đã tải bản sổ tay mới nhất từ GitHub.', 3000);
+      return true;
+    }).catch(function (error) {
+      saveStatus({ ok: false, at: nowIso(), error: error.message || String(error) });
+      toast('Tải từ GitHub thất bại: ' + (error.message || String(error)), 4800);
+      throw error;
+    }).then(function (result) {
+      syncing = false;
+      renderStatus();
+      return result;
+    }, function (error) {
+      syncing = false;
+      renderStatus();
       throw error;
     });
   }
@@ -355,8 +486,8 @@
       return;
     }
     syncTimer = window.setInterval(function () {
-      if (dirty && document.visibilityState !== 'hidden') {
-        syncNow('interval').catch(function () {});
+      if (document.visibilityState !== 'hidden') {
+        syncNow('interval-check').catch(function () {});
       }
     }, Math.max(5, Number(config.intervalMinutes || DEFAULT_INTERVAL)) * 60 * 1000);
   }
@@ -385,7 +516,7 @@
       return 'Chưa thiết lập token GitHub.';
     }
     if (!unlockedToken) {
-      return 'Đã lưu token mã hóa · cần mở khóa sau mỗi lần mở ứng dụng.';
+      return config.rememberSession ? 'Đã lưu token mã hóa · mở khóa một lần cho tab/phiên hiện tại.' : 'Đã lưu token mã hóa · cần mở khóa sau mỗi lần tải lại.';
     }
     if (dirty) {
       return 'Có thay đổi chưa đồng bộ.';
@@ -404,6 +535,7 @@
     var badge = element('githubNotebookSyncBadge');
     var unlockButton = element('githubNotebookUnlockButton');
     var syncButton = element('githubNotebookSyncNowButton');
+    var pullButton = element('githubNotebookPullButton');
     if (node) {
       node.textContent = message || statusText();
       node.setAttribute('data-state', state || (syncing ? 'working' : (lastStatus.ok ? 'ok' : (lastStatus.error ? 'error' : 'idle'))));
@@ -418,6 +550,9 @@
     if (syncButton) {
       syncButton.disabled = !unlockedToken || syncing;
     }
+    if (pullButton) {
+      pullButton.disabled = !unlockedToken || syncing;
+    }
   }
 
   function fillForm() {
@@ -426,6 +561,7 @@
     element('githubSyncBranchInput').value = config.branch || 'main';
     element('githubSyncPathInput').value = config.path || DEFAULT_PATH;
     element('githubSyncIntervalSelect').value = String(config.intervalMinutes || DEFAULT_INTERVAL);
+    element('githubSyncRememberSessionCheckbox').checked = !!config.rememberSession;
     element('githubSyncAutoCheckbox').checked = !!config.autoSync;
     element('githubSyncOnChangeCheckbox').checked = !!config.syncOnChange;
     element('githubSyncTokenInput').value = '';
@@ -438,6 +574,7 @@
     config.branch = trim(element('githubSyncBranchInput').value) || 'main';
     config.path = trim(element('githubSyncPathInput').value) || DEFAULT_PATH;
     config.intervalMinutes = Number(element('githubSyncIntervalSelect').value || DEFAULT_INTERVAL);
+    config.rememberSession = !!element('githubSyncRememberSessionCheckbox').checked;
     config.autoSync = !!element('githubSyncAutoCheckbox').checked;
     config.syncOnChange = !!element('githubSyncOnChangeCheckbox').checked;
   }
@@ -448,6 +585,7 @@
     readFormConfig();
     if (!token && encryptedToken) {
       saveConfig();
+      if (config.rememberSession) { saveSessionToken(); } else { clearSessionToken(); }
       scheduleTimers();
       renderStatus();
       toast('Đã cập nhật thiết lập đồng bộ.');
@@ -464,6 +602,7 @@
       unlockedToken = token;
       window.HanziStorage.writeJSON(TOKEN_KEY, encryptedToken);
       saveConfig();
+      saveSessionToken();
       element('githubSyncTokenInput').value = '';
       scheduleTimers();
       renderStatus();
@@ -476,6 +615,7 @@
     var passphrase;
     if (unlockedToken) {
       unlockedToken = '';
+      clearSessionToken();
       clearTimers();
       renderStatus();
       toast('Đã khóa token GitHub.');
@@ -487,6 +627,7 @@
     }
     return decryptToken(encryptedToken, passphrase).then(function (token) {
       unlockedToken = token;
+      saveSessionToken();
       scheduleTimers();
       renderStatus();
       toast('Đã mở khóa token GitHub.');
@@ -503,6 +644,7 @@
     }
     unlockedToken = '';
     encryptedToken = null;
+    clearSessionToken();
     clearTimers();
     window.HanziStorage.remove(TOKEN_KEY);
     saveStatus({});
@@ -527,16 +669,21 @@
       saveConfig();
       syncNow('manual').catch(function () {});
     }, false);
+    element('githubNotebookPullButton').addEventListener('click', function () {
+      readFormConfig();
+      saveConfig();
+      pullRemoteNow().catch(function () {});
+    }, false);
     element('githubNotebookDisconnectButton').addEventListener('click', disconnect, false);
     document.addEventListener('hanzi-notebook-changed', markDirty, false);
     document.addEventListener('visibilitychange', function () {
-      if (document.visibilityState === 'visible' && unlockedToken && config.autoSync && dirty) {
-        syncNow('visible').catch(function () {});
+      if (document.visibilityState === 'visible' && unlockedToken && config.autoSync) {
+        syncNow('visible-check').catch(function () {});
       }
     }, false);
     window.addEventListener('online', function () {
-      if (unlockedToken && config.autoSync && dirty) {
-        syncNow('online').catch(function () {});
+      if (unlockedToken && config.autoSync) {
+        syncNow('online-check').catch(function () {});
       }
     }, false);
   }
@@ -547,15 +694,25 @@
     }
     options = initOptions || {};
     readConfig();
+    restoreSessionToken();
     fillForm();
     bindEvents();
     renderStatus();
     initialized = true;
+    if (unlockedToken) {
+      scheduleTimers();
+      if (config.autoSync) {
+        window.setTimeout(function () {
+          syncNow('session-restore').catch(function () {});
+        }, 250);
+      }
+    }
   }
 
   window.HanziGithubNotebookSync = {
     init: init,
     syncNow: syncNow,
+    pullRemoteNow: pullRemoteNow,
     markDirty: markDirty,
     isUnlocked: function () { return !!unlockedToken; },
     getConfig: function () { return window.HanziStorage.clone(config); },
@@ -565,8 +722,12 @@
       utf8ToBase64: utf8ToBase64,
       base64ToUtf8: base64ToUtf8,
       setToken: function (token) { unlockedToken = token; },
+      setEncryptedToken: function (payload) { encryptedToken = payload; },
       setConfig: function (next) { config = next; },
-      getDirty: function () { return dirty; }
+      getDirty: function () { return dirty; },
+      saveSessionToken: saveSessionToken,
+      restoreSessionToken: restoreSessionToken,
+      clearSessionToken: clearSessionToken
     }
   };
 })(window, document);
