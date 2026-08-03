@@ -1,4 +1,4 @@
-# Luyện nhớ chữ Hán — V8: luyện viết, từ điển, bảng Pinyin và sổ tay
+# Luyện nhớ chữ Hán — V10: luyện viết, từ điển, bảng Pinyin và sổ tay đồng bộ
 
 Website học chữ Hán tối ưu cho iPhone và máy tính. Dữ liệu bài học được đồng bộ tự động từ GitHub.
 
@@ -35,11 +35,11 @@ Mở tab **Phân tích chữ**, nhập một chữ hoặc một từ. Với mỗ
 
 ### 4. Bảng thanh mẫu và vận mẫu
 
-Tab **Bảng Pinyin** có danh sách 23 thanh mẫu/ký hiệu âm đầu và 39 mục vận mẫu thực hành. Mỗi mục có một ô trống để người học tự mô tả cách đọc bằng tiếng Việt. Nội dung được tự động lưu trên trình duyệt hiện tại.
+Tab **Bảng Pinyin** có danh sách 23 thanh mẫu/ký hiệu âm đầu và 39 mục vận mẫu thực hành. Mỗi nhóm hiển thị sẵn các âm thuộc nhóm ngay dưới tiêu đề, ví dụ `(b, p, m, f)`. Mỗi mục có một ô trống để người học tự mô tả cách đọc bằng tiếng Việt.
 
 ### 5. Sổ tay công thức và lưu ý
 
-Tab **Sổ tay** cho phép:
+Tab **Sổ tay** ưu tiên hiển thị danh sách ghi chú và ô tìm kiếm ngay đầu trang. Biểu mẫu thêm/sửa cùng phần sao lưu, đồng bộ được thu gọn phía dưới. Sổ tay cho phép:
 
 - Lưu công thức ngữ pháp, quy tắc phát âm, thanh điệu và cách viết câu.
 - Thêm ví dụ minh họa.
@@ -47,7 +47,7 @@ Tab **Sổ tay** cho phép:
 - Chỉnh sửa và xóa ghi chú.
 - Xuất/nhập một file JSON chứa cả ghi chú và mô tả Pinyin để chuyển sang thiết bị khác.
 
-Dữ liệu sổ tay chỉ nằm trong `localStorage` của từng trình duyệt, nên cần dùng nút **Xuất sổ tay JSON** để sao lưu.
+Dữ liệu sổ tay được lưu trong `localStorage` và có thể tự đồng bộ sang repository GitHub riêng nếu đã cấu hình V9. Nút **Xuất sổ tay JSON** vẫn dùng để sao lưu thủ công.
 
 ## Thêm bài mới trên GitHub
 
@@ -105,7 +105,7 @@ chữ Hán | pinyin | nghĩa tiếng Việt
 - Mỗi lần mở trang, ứng dụng yêu cầu dữ liệu bài học mới từ GitHub Pages.
 - Service Worker dùng network-first cho `lessons.json` và `characters.json`.
 - Nếu nguồn phân tích chữ tạm thời không tải được trong GitHub Actions, bài học mới vẫn được gộp; dữ liệu phân tích hiện có được giữ lại và chữ mới có thể tạm hiển thị “chưa có dữ liệu”.
-- Tiến độ học, mô tả Pinyin và sổ tay nằm trong `localStorage` của từng thiết bị.
+- Tiến độ học nằm trong `localStorage`. Mô tả Pinyin và sổ tay nằm trong `localStorage` và có thể đồng bộ với repository GitHub riêng.
 - Dữ liệu bài học đồng bộ từ GitHub không ghi đè sổ tay cá nhân.
 
 ## Chạy thử trên máy tính

@@ -1,4 +1,4 @@
-var CACHE_NAME = 'hanzi-trainer-v9-github-notebook-sync';
+var CACHE_NAME = 'hanzi-trainer-v10-notes-first';
 var APP_SHELL = [
   './',
   './index.html',

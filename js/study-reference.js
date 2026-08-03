@@ -159,12 +159,20 @@
   function renderPinyinGroup(container, type, group, openByDefault) {
     var details = document.createElement('details');
     var summary = document.createElement('summary');
+    var titleLine = document.createElement('span');
+    var itemLine = document.createElement('span');
     var body = document.createElement('div');
     var i;
 
     details.className = 'pinyin-group';
     details.open = !!openByDefault;
-    summary.textContent = group.title + ' · ' + String(group.items.length) + ' mục';
+    summary.className = 'pinyin-group-summary';
+    titleLine.className = 'pinyin-group-summary-title';
+    titleLine.textContent = group.title + ' · ' + String(group.items.length) + ' mục';
+    itemLine.className = 'pinyin-group-summary-items';
+    itemLine.textContent = '(' + group.items.join(', ') + ')';
+    summary.appendChild(titleLine);
+    summary.appendChild(itemLine);
     body.className = 'pinyin-group-body';
 
     for (i = 0; i < group.items.length; i += 1) {
@@ -324,6 +332,37 @@
     element('noteEditorTitle').textContent = 'Thêm ghi chú mới';
   }
 
+  function setNoteEditorOpen(open) {
+    var details = element('notesEditorDetails');
+    if (details) {
+      details.open = !!open;
+    }
+  }
+
+  function focusNoteEditor() {
+    setNoteEditorOpen(true);
+    window.setTimeout(function () {
+      var panel = element('notesEditorPanel');
+      var titleInput = element('noteTitleInput');
+      if (panel && panel.scrollIntoView) {
+        panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+      if (titleInput) {
+        titleInput.focus();
+      }
+    }, 30);
+  }
+
+  function returnToNotesList() {
+    setNoteEditorOpen(false);
+    window.setTimeout(function () {
+      var panel = element('notesPrimaryPanel');
+      if (panel && panel.scrollIntoView) {
+        panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 30);
+  }
+
   function getEditingNote() {
     var i;
     for (i = 0; i < notesState.items.length; i += 1) {
@@ -370,6 +409,7 @@
     saveNotesState('note-saved');
     clearNoteEditor();
     renderNotes();
+    returnToNotesList();
   }
 
   function editNote(id) {
@@ -395,8 +435,7 @@
     element('saveNoteButton').textContent = 'Cập nhật ghi chú';
     element('deleteNoteButton').hidden = false;
     element('noteEditorTitle').textContent = 'Chỉnh sửa ghi chú';
-    element('notesEditorPanel').scrollIntoView({ behavior: 'smooth', block: 'start' });
-    element('noteTitleInput').focus();
+    focusNoteEditor();
   }
 
   function deleteEditingNote() {
@@ -419,6 +458,7 @@
     saveNotesState('note-deleted');
     clearNoteEditor();
     renderNotes();
+    returnToNotesList();
     toast('Đã xóa ghi chú.');
   }
 
@@ -481,7 +521,7 @@
 
     button.type = 'button';
     button.className = 'button button-secondary note-edit-button';
-    button.textContent = 'Chỉnh sửa';
+    button.textContent = 'Sửa';
     button.addEventListener('click', function () {
       editNote(note.id);
     }, false);
@@ -565,6 +605,7 @@
         renderPinyinTables();
         clearNoteEditor();
         renderNotes();
+        setNoteEditorOpen(false);
         notifyChanged('import');
         toast('Đã nhập dữ liệu sổ tay.', 2800);
       } catch (error) {
@@ -715,6 +756,7 @@
     renderPinyinTables();
     clearNoteEditor();
     renderNotes();
+    setNoteEditorOpen(false);
     if (!silent) {
       notifyChanged('github-merge');
     }
@@ -726,10 +768,12 @@
     element('saveNoteButton').addEventListener('click', saveNote, false);
     element('newNoteButton').addEventListener('click', function () {
       clearNoteEditor();
-      element('notesEditorPanel').scrollIntoView({ behavior: 'smooth', block: 'start' });
-      element('noteTitleInput').focus();
+      focusNoteEditor();
     }, false);
-    element('cancelNoteButton').addEventListener('click', clearNoteEditor, false);
+    element('cancelNoteButton').addEventListener('click', function () {
+      clearNoteEditor();
+      returnToNotesList();
+    }, false);
     element('deleteNoteButton').addEventListener('click', deleteEditingNote, false);
     element('notesSearchInput').addEventListener('input', renderNotes, false);
     element('exportNotebookButton').addEventListener('click', exportNotebook, false);
@@ -753,6 +797,7 @@
     populateCategorySelect();
     renderPinyinTables();
     clearNoteEditor();
+    setNoteEditorOpen(false);
     renderNotes();
     bindEvents();
     initialized = true;

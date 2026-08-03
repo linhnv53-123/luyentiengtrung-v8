@@ -8,7 +8,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Luyện chữ Hán">
   <meta name="format-detection" content="telephone=no">
-  <title>Luyện nhớ chữ Hán · V9</title>
+  <title>Luyện nhớ chữ Hán · V10</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
   <link rel="stylesheet" href="css/app.css">
@@ -252,7 +252,28 @@
     </section>
 
     <section class="app-view" id="notesView" data-view="notes" hidden>
-      <div class="notes-layout">
+      <section class="panel notes-list-panel notes-primary-panel" id="notesPrimaryPanel">
+        <div class="notes-list-header">
+          <div>
+            <h2>Sổ tay của tôi</h2>
+            <p id="notesCountText">0 ghi chú</p>
+          </div>
+          <button type="button" class="button button-primary compact-button" id="newNoteButton">+ Ghi chú mới</button>
+        </div>
+
+        <div class="notes-search-row">
+          <label class="sr-only" for="notesSearchInput">Tìm ghi chú</label>
+          <input id="notesSearchInput" type="search" autocomplete="off" placeholder="Tìm theo tiêu đề, nội dung hoặc phân loại…">
+        </div>
+
+        <div class="notes-list" id="notesList" aria-live="polite"></div>
+      </section>
+
+      <details class="notes-tools-details" id="notesEditorDetails">
+        <summary>
+          <span class="notes-tools-summary-title">✍️ Thêm hoặc chỉnh sửa ghi chú</span>
+          <span class="notes-tools-summary-hint">Biểu mẫu được ẩn để danh sách ghi chú luôn hiển thị trước.</span>
+        </summary>
         <section class="panel notes-editor-panel" id="notesEditorPanel">
           <div class="tool-heading">
             <div>
@@ -282,25 +303,18 @@
 
           <div class="note-editor-actions">
             <button type="button" class="button button-primary" id="saveNoteButton">Lưu ghi chú</button>
-            <button type="button" class="button button-secondary" id="cancelNoteButton">Xóa nội dung đang nhập</button>
+            <button type="button" class="button button-secondary" id="cancelNoteButton">Hủy</button>
             <button type="button" class="button button-danger" id="deleteNoteButton" hidden>Xóa ghi chú này</button>
           </div>
         </section>
+      </details>
 
-        <section class="panel notes-list-panel">
-          <div class="notes-list-header">
-            <div>
-              <h2>Sổ tay của tôi</h2>
-              <p id="notesCountText">0 ghi chú</p>
-            </div>
-            <button type="button" class="button button-primary" id="newNoteButton">+ Ghi chú mới</button>
-          </div>
-
-          <div class="notes-search-row">
-            <label class="sr-only" for="notesSearchInput">Tìm ghi chú</label>
-            <input id="notesSearchInput" type="search" autocomplete="off" placeholder="Tìm theo tiêu đề, nội dung hoặc phân loại…">
-          </div>
-
+      <details class="notes-tools-details" id="notesSettingsDetails">
+        <summary>
+          <span class="notes-tools-summary-title">⚙️ Sao lưu và đồng bộ</span>
+          <span class="notes-tools-summary-hint">Xuất/nhập JSON và thiết lập đồng bộ GitHub.</span>
+        </summary>
+        <section class="panel notes-utilities-panel">
           <div class="notebook-backup-row">
             <button type="button" class="button button-secondary" id="exportNotebookButton">Xuất sổ tay JSON</button>
             <label class="button button-secondary file-button">Nhập sổ tay JSON
@@ -374,10 +388,8 @@
             </details>
             <p class="sync-limit-note">Trên iPhone, website không thể chạy định kỳ khi Safari/Chrome đã đóng. Đồng bộ tự động hoạt động khi ứng dụng đang mở và token đã được mở khóa.</p>
           </section>
-
-          <div class="notes-list" id="notesList" aria-live="polite"></div>
         </section>
-      </div>
+      </details>
     </section>
     </main>
   </div>

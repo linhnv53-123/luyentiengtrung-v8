@@ -2367,3 +2367,147 @@ textarea:focus-visible {
     grid-template-columns: 1fr;
   }
 }
+
+/* V10: Sổ tay ưu tiên danh sách và tiêu đề nhóm Pinyin rõ hơn */
+.pinyin-group-summary-title,
+.pinyin-group-summary-items {
+  display: block;
+}
+
+.pinyin-group-summary-items {
+  margin-top: 3px;
+  padding-left: 18px;
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 650;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.pinyin-group[open] .pinyin-group-summary-items {
+  color: #475569;
+}
+
+.notes-primary-panel {
+  margin-bottom: 12px;
+}
+
+.notes-primary-panel .notes-list {
+  margin-top: 12px;
+}
+
+.notes-tools-details {
+  margin-top: 10px;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.notes-tools-details > summary {
+  display: list-item;
+  padding: 13px 15px;
+  color: #1e293b;
+  background: #f8fafc;
+  cursor: pointer;
+  list-style-position: inside;
+  touch-action: manipulation;
+}
+
+.notes-tools-details[open] > summary {
+  border-bottom: 1px solid var(--line);
+}
+
+.notes-tools-summary-title,
+.notes-tools-summary-hint {
+  display: block;
+}
+
+.notes-tools-summary-title {
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.35;
+}
+
+.notes-tools-summary-hint {
+  margin-top: 3px;
+  padding-left: 20px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.45;
+}
+
+.notes-tools-details > .panel {
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.notes-editor-panel {
+  position: static;
+}
+
+.notes-utilities-panel {
+  padding-top: 12px;
+}
+
+.notes-utilities-panel .notebook-backup-row {
+  margin-top: 0;
+}
+
+.notes-utilities-panel .github-notebook-sync {
+  margin-bottom: 0;
+}
+
+@media (min-width: 981px) {
+  .notes-primary-panel {
+    padding: 18px;
+  }
+
+  .notes-tools-details > .panel {
+    padding: 18px;
+  }
+}
+
+@media (max-width: 720px) {
+  .pinyin-group-summary-items {
+    padding-left: 16px;
+    font-size: 11px;
+  }
+
+  .notes-primary-panel {
+    margin-bottom: 9px;
+  }
+
+  .notes-tools-details {
+    margin-top: 8px;
+    border-radius: 14px;
+  }
+
+  .notes-tools-details > summary {
+    padding: 11px 12px;
+  }
+
+  .notes-tools-summary-title {
+    font-size: 14px;
+  }
+
+  .notes-tools-summary-hint {
+    padding-left: 18px;
+    font-size: 11px;
+  }
+
+  .notes-tools-details > .panel {
+    padding: 11px;
+  }
+
+  .notes-list-header {
+    margin-bottom: 9px;
+  }
+
+  .notes-primary-panel .notes-list {
+    margin-top: 9px;
+  }
+}

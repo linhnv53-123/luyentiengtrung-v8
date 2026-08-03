@@ -823,7 +823,7 @@
       return;
     }
     window.addEventListener('load', function () {
-      window.navigator.serviceWorker.register('sw.js?v=8').then(function (registration) {
+      window.navigator.serviceWorker.register('sw.js?v=10').then(function (registration) {
       registration.update();
     }).catch(function () {
         /* Không chặn ứng dụng nếu service worker không đăng ký được. */
