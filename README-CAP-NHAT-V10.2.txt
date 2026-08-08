@@ -11,3 +11,4 @@ Cập nhật:
 2. Ghi đè file cũ.
 3. Commit và Push origin.
 4. Mở website với ?v=102.
+Cập nhật dữ liệu B16
