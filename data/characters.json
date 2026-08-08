@@ -2,14 +2,14 @@
   "version": 1,
   "metadata": {
     "generated_by": "tools/build-characters.py",
-    "generated_at": "2026-08-02T10:33:12+00:00",
-    "revision": "8c69a8a117ec2b2a",
-    "character_count": 295,
-    "available_count": 10,
+    "generated_at": "2026-08-08T18:45:14+00:00",
+    "revision": "79a8cdc4bab2b0e4",
+    "character_count": 323,
+    "available_count": 323,
     "source": "Make Me a Hanzi dictionary.txt",
     "source_url": "https://raw.githubusercontent.com/skishore/makemeahanzi/refs/heads/master/dictionary.txt",
     "source_license": "LGPL-3.0-or-later",
-    "source_loaded_from": "tests/fixtures/makemeahanzi-sample.txt",
+    "source_loaded_from": "https://raw.githubusercontent.com/skishore/makemeahanzi/refs/heads/master/dictionary.txt",
     "source_error": ""
   },
   "characters": [
@@ -26,36 +26,44 @@
     },
     {
       "character": "七",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "一",
+      "decomposition": "⿻一乚",
+      "structure": "chồng/đan xen",
+      "components": [
+        "一",
+        "乚"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "万",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "一",
+      "decomposition": "⿱一？",
+      "structure": "trên – dưới",
+      "components": [
+        "一"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "三",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "一",
+      "decomposition": "⿱一二",
+      "structure": "trên – dưới",
+      "components": [
+        "一",
+        "二"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "上",
@@ -87,36 +95,45 @@
     },
     {
       "character": "不",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "一",
+      "decomposition": "⿱一？",
+      "structure": "trên – dưới",
+      "components": [
+        "一"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "两",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "一",
+      "decomposition": "⿱一⿻冂从",
+      "structure": "trên – dưới",
+      "components": [
+        "一",
+        "冂",
+        "从"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "个",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "丨",
+      "decomposition": "⿱人丨",
+      "structure": "trên – dưới",
+      "components": [
+        "人",
+        "丨"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "中",
@@ -134,1081 +151,1430 @@
     },
     {
       "character": "为",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "丶",
+      "decomposition": "⿻丶⿴力丶",
+      "structure": "chồng/đan xen",
+      "components": [
+        "丶",
+        "力"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "久",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "丿",
+      "decomposition": "⿻勹？",
+      "structure": "chồng/đan xen",
+      "components": [
+        "勹"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "么",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "丿",
+      "decomposition": "⿱丿厶",
+      "structure": "trên – dưới",
+      "components": [
+        "丿",
+        "厶"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "乐",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "丿",
+      "decomposition": "⿻⿱丿？小",
+      "structure": "chồng/đan xen",
+      "components": [
+        "丿",
+        "小"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "九",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "乙",
+      "decomposition": "⿻丿乙",
+      "structure": "chồng/đan xen",
+      "components": [
+        "丿",
+        "乙"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "也",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "乚",
+      "decomposition": "⿻？乚",
+      "structure": "chồng/đan xen",
+      "components": [
+        "乚"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "习",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "冫",
+      "decomposition": "⿹？冫",
+      "structure": "bao quanh từ trên-phải",
+      "components": [
+        "冫"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "书",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "丨",
+      "decomposition": "⿻？丨",
+      "structure": "chồng/đan xen",
+      "components": [
+        "丨"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "买",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "大",
+      "decomposition": "⿱乛头",
+      "structure": "trên – dưới",
+      "components": [
+        "乛",
+        "头"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "了",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "亅",
+      "decomposition": "⿱乛亅",
+      "structure": "trên – dưới",
+      "components": [
+        "乛",
+        "亅"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "二",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "二",
+      "decomposition": "⿱一一",
+      "structure": "trên – dưới",
+      "components": [
+        "一"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "五",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "二",
+      "decomposition": "⿴二？",
+      "structure": "bao quanh kín",
+      "components": [
+        "二"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "些",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "二",
+      "decomposition": "⿱此二",
+      "structure": "trên – dưới",
+      "components": [
+        "此",
+        "二"
+      ],
+      "formation": "hình thanh",
+      "semantic": "二",
+      "phonetic": "此",
+      "available": true
+    },
+    {
+      "character": "京",
+      "radical": "亠",
+      "decomposition": "⿳亠口小",
+      "structure": "trên – giữa – dưới",
+      "components": [
+        "亠",
+        "口",
+        "小"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "人",
-      "radical": "",
+      "radical": "人",
       "decomposition": "",
       "structure": "chữ đơn/thành phần chưa xác định",
       "components": [],
-      "formation": "",
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "什",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "亻",
+      "decomposition": "⿰亻十",
+      "structure": "trái – phải",
+      "components": [
+        "亻",
+        "十"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "今",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "人",
+      "decomposition": "⿱人？",
+      "structure": "trên – dưới",
+      "components": [
+        "人"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "介",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "人",
+      "decomposition": "⿱人？",
+      "structure": "trên – dưới",
+      "components": [
+        "人"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "他",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "亻",
+      "decomposition": "⿰亻也",
+      "structure": "trái – phải",
+      "components": [
+        "亻",
+        "也"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "以",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "人",
+      "decomposition": "⿰？人",
+      "structure": "trái – phải",
+      "components": [
+        "人"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "们",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "亻",
+      "decomposition": "⿰亻门",
+      "structure": "trái – phải",
+      "components": [
+        "亻",
+        "门"
+      ],
+      "formation": "hình thanh",
+      "semantic": "亻",
+      "phonetic": "门",
+      "available": true
     },
     {
       "character": "件",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "亻",
+      "decomposition": "⿰亻牛",
+      "structure": "trái – phải",
+      "components": [
+        "亻",
+        "牛"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
+    },
+    {
+      "character": "休",
+      "radical": "亻",
+      "decomposition": "⿰亻木",
+      "structure": "trái – phải",
+      "components": [
+        "亻",
+        "木"
+      ],
+      "formation": "hội ý/chỉ sự",
+      "semantic": "",
+      "phonetic": "",
+      "available": true
     },
     {
       "character": "会",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "人",
+      "decomposition": "⿱人云",
+      "structure": "trên – dưới",
+      "components": [
+        "人",
+        "云"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "位",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "亻",
+      "decomposition": "⿰亻立",
+      "structure": "trái – phải",
+      "components": [
+        "亻",
+        "立"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "住",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "亻",
+      "decomposition": "⿰亻主",
+      "structure": "trái – phải",
+      "components": [
+        "亻",
+        "主"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "作",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "亻",
+      "decomposition": "⿰亻乍",
+      "structure": "trái – phải",
+      "components": [
+        "亻",
+        "乍"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "你",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "亻",
+      "decomposition": "⿰亻尔",
+      "structure": "trái – phải",
+      "components": [
+        "亻",
+        "尔"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "俄",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "亻",
+      "decomposition": "⿰亻我",
+      "structure": "trái – phải",
+      "components": [
+        "亻",
+        "我"
+      ],
+      "formation": "hình thanh",
       "semantic": "",
-      "phonetic": "",
-      "available": false
+      "phonetic": "我",
+      "available": true
     },
     {
       "character": "信",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "亻",
+      "decomposition": "⿰亻言",
+      "structure": "trái – phải",
+      "components": [
+        "亻",
+        "言"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "俩",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "亻",
+      "decomposition": "⿰亻两",
+      "structure": "trái – phải",
+      "components": [
+        "亻",
+        "两"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
+    },
+    {
+      "character": "候",
+      "radical": "亻",
+      "decomposition": "⿰亻矦",
+      "structure": "trái – phải",
+      "components": [
+        "亻",
+        "矦"
+      ],
+      "formation": "hình thanh",
+      "semantic": "亻",
+      "phonetic": "矦",
+      "available": true
+    },
+    {
+      "character": "借",
+      "radical": "亻",
+      "decomposition": "⿰亻昔",
+      "structure": "trái – phải",
+      "components": [
+        "亻",
+        "昔"
+      ],
+      "formation": "hình thanh",
+      "semantic": "亻",
+      "phonetic": "昔",
+      "available": true
     },
     {
       "character": "做",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "亻",
+      "decomposition": "⿰亻故",
+      "structure": "trái – phải",
+      "components": [
+        "亻",
+        "故"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "儿",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "儿",
+      "decomposition": "⿰丿乚",
+      "structure": "trái – phải",
+      "components": [
+        "丿",
+        "乚"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "元",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "儿",
+      "decomposition": "⿱二儿",
+      "structure": "trên – dưới",
+      "components": [
+        "二",
+        "儿"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "先",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "儿",
+      "decomposition": "⿱⿰？土儿",
+      "structure": "trên – dưới",
+      "components": [
+        "土",
+        "儿"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "八",
-      "radical": "",
+      "radical": "八",
       "decomposition": "",
       "structure": "chữ đơn/thành phần chưa xác định",
       "components": [],
-      "formation": "",
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "公",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "八",
+      "decomposition": "⿱八厶",
+      "structure": "trên – dưới",
+      "components": [
+        "八",
+        "厶"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "六",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "八",
+      "decomposition": "⿱亠八",
+      "structure": "trên – dưới",
+      "components": [
+        "亠",
+        "八"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "共",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "八",
+      "decomposition": "⿳廾一八",
+      "structure": "trên – giữa – dưới",
+      "components": [
+        "廾",
+        "一",
+        "八"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "兴",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "八",
+      "decomposition": "⿳⺍一八",
+      "structure": "trên – giữa – dưới",
+      "components": [
+        "⺍",
+        "一",
+        "八"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "内",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "入",
+      "decomposition": "⿻冂人",
+      "structure": "chồng/đan xen",
+      "components": [
+        "冂",
+        "人"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "再",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "冂",
+      "decomposition": "⿱一冉",
+      "structure": "trên – dưới",
+      "components": [
+        "一",
+        "冉"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "几",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "几",
+      "decomposition": "⿰丿乙",
+      "structure": "trái – phải",
+      "components": [
+        "丿",
+        "乙"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "分",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "刀",
+      "decomposition": "⿱八刀",
+      "structure": "trên – dưới",
+      "components": [
+        "八",
+        "刀"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "刚",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "刂",
+      "decomposition": "⿰冈刂",
+      "structure": "trái – phải",
+      "components": [
+        "冈",
+        "刂"
+      ],
+      "formation": "hình thanh",
+      "semantic": "刂",
+      "phonetic": "冈",
+      "available": true
     },
     {
       "character": "别",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "刂",
+      "decomposition": "⿰另刂",
+      "structure": "trái – phải",
+      "components": [
+        "另",
+        "刂"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
+    },
+    {
+      "character": "刷",
+      "radical": "刂",
+      "decomposition": "⿰⿸尸巾刂",
+      "structure": "trái – phải",
+      "components": [
+        "尸",
+        "巾",
+        "刂"
+      ],
+      "formation": "hội ý/chỉ sự",
+      "semantic": "",
+      "phonetic": "",
+      "available": true
     },
     {
       "character": "办",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "力",
+      "decomposition": "⿻力八",
+      "structure": "chồng/đan xen",
+      "components": [
+        "力",
+        "八"
+      ],
+      "formation": "hình thanh",
+      "semantic": "力",
+      "phonetic": "八",
+      "available": true
     },
     {
       "character": "包",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "勹",
+      "decomposition": "⿹勹巳",
+      "structure": "bao quanh từ trên-phải",
+      "components": [
+        "勹",
+        "巳"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "医",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "匸",
+      "decomposition": "⿷匸矢",
+      "structure": "bao quanh, hở phải",
+      "components": [
+        "匸",
+        "矢"
+      ],
+      "formation": "hình thanh",
+      "semantic": "矢",
+      "phonetic": "匸",
+      "available": true
     },
     {
       "character": "十",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "十",
+      "decomposition": "⿻一丨",
+      "structure": "chồng/đan xen",
+      "components": [
+        "一",
+        "丨"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "千",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "十",
+      "decomposition": "⿱丿十",
+      "structure": "trên – dưới",
+      "components": [
+        "丿",
+        "十"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "午",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "十",
+      "decomposition": "⿻丿干",
+      "structure": "chồng/đan xen",
+      "components": [
+        "丿",
+        "干"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "卖",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "十",
+      "decomposition": "⿱十买",
+      "structure": "trên – dưới",
+      "components": [
+        "十",
+        "买"
+      ],
+      "formation": "hình thanh",
+      "semantic": "买",
+      "phonetic": "买",
+      "available": true
     },
     {
       "character": "南",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "十",
+      "decomposition": "⿱十⿵冂⿱丷干",
+      "structure": "trên – dưới",
+      "components": [
+        "十",
+        "冂",
+        "丷",
+        "干"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "去",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "厶",
+      "decomposition": "⿱土厶",
+      "structure": "trên – dưới",
+      "components": [
+        "土",
+        "厶"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "友",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "又",
+      "decomposition": "⿸？又",
+      "structure": "bao quanh từ trên-trái",
+      "components": [
+        "又"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "发",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "又",
+      "decomposition": "⿸？又",
+      "structure": "bao quanh từ trên-trái",
+      "components": [
+        "又"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "取",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "又",
+      "decomposition": "⿰耳又",
+      "structure": "trái – phải",
+      "components": [
+        "耳",
+        "又"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "口",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "口",
+      "decomposition": "⿱冂一",
+      "structure": "trên – dưới",
+      "components": [
+        "冂",
+        "一"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "只",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "口",
+      "decomposition": "⿱口八",
+      "structure": "trên – dưới",
+      "components": [
+        "口",
+        "八"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "叫",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "口",
+      "decomposition": "⿰口丩",
+      "structure": "trái – phải",
+      "components": [
+        "口",
+        "丩"
+      ],
+      "formation": "hình thanh",
+      "semantic": "口",
+      "phonetic": "丩",
+      "available": true
     },
     {
       "character": "可",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "口",
+      "decomposition": "⿻丁口",
+      "structure": "chồng/đan xen",
+      "components": [
+        "丁",
+        "口"
+      ],
+      "formation": "hình thanh",
+      "semantic": "丁",
+      "phonetic": "口",
+      "available": true
     },
     {
       "character": "号",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "口",
+      "decomposition": "⿱口丂",
+      "structure": "trên – dưới",
+      "components": [
+        "口",
+        "丂"
+      ],
+      "formation": "hình thanh",
+      "semantic": "口",
+      "phonetic": "丂",
+      "available": true
     },
     {
       "character": "司",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "口",
+      "decomposition": "⿹？口",
+      "structure": "bao quanh từ trên-phải",
+      "components": [
+        "口"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "吃",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "口",
+      "decomposition": "⿰口乞",
+      "structure": "trái – phải",
+      "components": [
+        "口",
+        "乞"
+      ],
+      "formation": "hình thanh",
+      "semantic": "口",
+      "phonetic": "乞",
+      "available": true
     },
     {
       "character": "同",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "口",
+      "decomposition": "⿵凡口",
+      "structure": "bao quanh, hở dưới",
+      "components": [
+        "凡",
+        "口"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "名",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "口",
+      "decomposition": "⿸夕口",
+      "structure": "bao quanh từ trên-trái",
+      "components": [
+        "夕",
+        "口"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "吗",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "口",
+      "decomposition": "⿰口马",
+      "structure": "trái – phải",
+      "components": [
+        "口",
+        "马"
+      ],
+      "formation": "hình thanh",
+      "semantic": "口",
+      "phonetic": "马",
+      "available": true
     },
     {
       "character": "吧",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "口",
+      "decomposition": "⿰口巴",
+      "structure": "trái – phải",
+      "components": [
+        "口",
+        "巴"
+      ],
+      "formation": "hình thanh",
+      "semantic": "口",
+      "phonetic": "巴",
+      "available": true
     },
     {
       "character": "听",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "口",
+      "decomposition": "⿰口斤",
+      "structure": "trái – phải",
+      "components": [
+        "口",
+        "斤"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "员",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
+      "radical": "口",
+      "decomposition": "⿱口贝",
+      "structure": "trên – dưới",
+      "components": [
+        "口",
+        "贝"
+      ],
+      "formation": "hình thanh",
+      "semantic": "贝",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "呢",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "口",
+      "decomposition": "⿰口尼",
+      "structure": "trái – phải",
+      "components": [
+        "口",
+        "尼"
+      ],
+      "formation": "hình thanh",
+      "semantic": "口",
+      "phonetic": "尼",
+      "available": true
     },
     {
       "character": "周",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "口",
+      "decomposition": "⿵冂⿱土口",
+      "structure": "bao quanh, hở dưới",
+      "components": [
+        "冂",
+        "土",
+        "口"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "和",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "口",
+      "decomposition": "⿰禾口",
+      "structure": "trái – phải",
+      "components": [
+        "禾",
+        "口"
+      ],
+      "formation": "hình thanh",
+      "semantic": "口",
+      "phonetic": "禾",
+      "available": true
     },
     {
       "character": "咖",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "口",
+      "decomposition": "⿰口加",
+      "structure": "trái – phải",
+      "components": [
+        "口",
+        "加"
+      ],
+      "formation": "hình thanh",
+      "semantic": "口",
+      "phonetic": "加",
+      "available": true
     },
     {
       "character": "哥",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "口",
+      "decomposition": "⿱可可",
+      "structure": "trên – dưới",
+      "components": [
+        "可"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "哪",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "口",
+      "decomposition": "⿰口那",
+      "structure": "trái – phải",
+      "components": [
+        "口",
+        "那"
+      ],
+      "formation": "hình thanh",
+      "semantic": "口",
+      "phonetic": "那",
+      "available": true
     },
     {
       "character": "商",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "口",
+      "decomposition": "⿱⿱亠丷冏",
+      "structure": "trên – dưới",
+      "components": [
+        "亠",
+        "丷",
+        "冏"
+      ],
+      "formation": "hình thanh",
+      "semantic": "冏",
+      "phonetic": "章",
+      "available": true
     },
     {
       "character": "啡",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "口",
+      "decomposition": "⿰口非",
+      "structure": "trái – phải",
+      "components": [
+        "口",
+        "非"
+      ],
+      "formation": "hình thanh",
+      "semantic": "口",
+      "phonetic": "非",
+      "available": true
     },
     {
       "character": "啤",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "口",
+      "decomposition": "⿰口卑",
+      "structure": "trái – phải",
+      "components": [
+        "口",
+        "卑"
+      ],
+      "formation": "hình thanh",
+      "semantic": "口",
+      "phonetic": "卑",
+      "available": true
     },
     {
       "character": "喜",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "口",
+      "decomposition": "⿱壴口",
+      "structure": "trên – dưới",
+      "components": [
+        "壴",
+        "口"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "喝",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "口",
+      "decomposition": "⿰口曷",
+      "structure": "trái – phải",
+      "components": [
+        "口",
+        "曷"
+      ],
+      "formation": "hình thanh",
+      "semantic": "口",
+      "phonetic": "曷",
+      "available": true
     },
     {
       "character": "四",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "囗",
+      "decomposition": "⿴囗儿",
+      "structure": "bao quanh kín",
+      "components": [
+        "囗",
+        "儿"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "回",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "囗",
+      "decomposition": "⿴囗口",
+      "structure": "bao quanh kín",
+      "components": [
+        "囗",
+        "口"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "园",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "囗",
+      "decomposition": "⿴囗元",
+      "structure": "bao quanh kín",
+      "components": [
+        "囗",
+        "元"
+      ],
+      "formation": "hình thanh",
+      "semantic": "囗",
+      "phonetic": "元",
+      "available": true
     },
     {
       "character": "国",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "囗",
+      "decomposition": "⿴囗玉",
+      "structure": "bao quanh kín",
+      "components": [
+        "囗",
+        "玉"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "图",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "囗",
+      "decomposition": "⿴囗冬",
+      "structure": "bao quanh kín",
+      "components": [
+        "囗",
+        "冬"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "在",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "土",
+      "decomposition": "⿸才土",
+      "structure": "bao quanh từ trên-trái",
+      "components": [
+        "才",
+        "土"
+      ],
+      "formation": "hình thanh",
+      "semantic": "土",
+      "phonetic": "才",
+      "available": true
     },
     {
       "character": "坐",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "土",
+      "decomposition": "⿻从土",
+      "structure": "chồng/đan xen",
+      "components": [
+        "从",
+        "土"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "块",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "土",
+      "decomposition": "⿰土夬",
+      "structure": "trái – phải",
+      "components": [
+        "土",
+        "夬"
+      ],
+      "formation": "hình thanh",
+      "semantic": "土",
+      "phonetic": "夬",
+      "available": true
     },
     {
       "character": "堂",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "土",
+      "decomposition": "⿱尚土",
+      "structure": "trên – dưới",
+      "components": [
+        "尚",
+        "土"
+      ],
+      "formation": "hình thanh",
+      "semantic": "土",
+      "phonetic": "尚",
+      "available": true
     },
     {
       "character": "外",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "夕",
+      "decomposition": "⿰夕卜",
+      "structure": "trái – phải",
+      "components": [
+        "夕",
+        "卜"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "多",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "夕",
+      "decomposition": "⿱夕夕",
+      "structure": "trên – dưới",
+      "components": [
+        "夕"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "大",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "大",
+      "decomposition": "⿻一人",
+      "structure": "chồng/đan xen",
+      "components": [
+        "一",
+        "人"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "天",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "大",
+      "decomposition": "⿱一大",
+      "structure": "trên – dưới",
+      "components": [
+        "一",
+        "大"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "太",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "大",
+      "decomposition": "⿵大丶",
+      "structure": "bao quanh, hở dưới",
+      "components": [
+        "大",
+        "丶"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "头",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
+      "radical": "大",
+      "decomposition": "⿻⺀大",
+      "structure": "chồng/đan xen",
+      "components": [
+        "⺀",
+        "大"
+      ],
+      "formation": "hình thanh",
+      "semantic": "大",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "女",
-      "radical": "",
+      "radical": "女",
       "decomposition": "",
       "structure": "chữ đơn/thành phần chưa xác định",
       "components": [],
-      "formation": "",
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "奶",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "女",
+      "decomposition": "⿰女乃",
+      "structure": "trái – phải",
+      "components": [
+        "女",
+        "乃"
+      ],
+      "formation": "hình thanh",
+      "semantic": "女",
+      "phonetic": "乃",
+      "available": true
     },
     {
       "character": "她",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "女",
+      "decomposition": "⿰女也",
+      "structure": "trái – phải",
+      "components": [
+        "女",
+        "也"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "好",
@@ -1240,47 +1606,59 @@
     },
     {
       "character": "姐",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "女",
+      "decomposition": "⿰女且",
+      "structure": "trái – phải",
+      "components": [
+        "女",
+        "且"
+      ],
+      "formation": "hình thanh",
+      "semantic": "女",
+      "phonetic": "且",
+      "available": true
     },
     {
       "character": "姓",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "女",
+      "decomposition": "⿰女生",
+      "structure": "trái – phải",
+      "components": [
+        "女",
+        "生"
+      ],
+      "formation": "hình thanh",
+      "semantic": "女",
+      "phonetic": "生",
+      "available": true
     },
     {
       "character": "子",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "子",
+      "decomposition": "⿻了一",
+      "structure": "chồng/đan xen",
+      "components": [
+        "了",
+        "一"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "字",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "子",
+      "decomposition": "⿱宀子",
+      "structure": "trên – dưới",
+      "components": [
+        "宀",
+        "子"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "学",
@@ -1299,773 +1677,1102 @@
     },
     {
       "character": "安",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "宀",
+      "decomposition": "⿱宀女",
+      "structure": "trên – dưới",
+      "components": [
+        "宀",
+        "女"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "室",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "宀",
+      "decomposition": "⿱宀至",
+      "structure": "trên – dưới",
+      "components": [
+        "宀",
+        "至"
+      ],
+      "formation": "hình thanh",
+      "semantic": "宀",
+      "phonetic": "至",
+      "available": true
     },
     {
       "character": "家",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "宀",
+      "decomposition": "⿱宀豕",
+      "structure": "trên – dưới",
+      "components": [
+        "宀",
+        "豕"
+      ],
+      "formation": "hình thanh",
+      "semantic": "宀",
+      "phonetic": "豕",
+      "available": true
     },
     {
       "character": "容",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "宀",
+      "decomposition": "⿱宀谷",
+      "structure": "trên – dưới",
+      "components": [
+        "宀",
+        "谷"
+      ],
+      "formation": "hình thanh",
+      "semantic": "宀",
+      "phonetic": "",
+      "available": true
+    },
+    {
+      "character": "宿",
+      "radical": "宀",
+      "decomposition": "⿱宀佰",
+      "structure": "trên – dưới",
+      "components": [
+        "宀",
+        "佰"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "对",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "寸",
+      "decomposition": "⿰又寸",
+      "structure": "trái – phải",
+      "components": [
+        "又",
+        "寸"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "小",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "小",
+      "decomposition": "⿻亅八",
+      "structure": "chồng/đan xen",
+      "components": [
+        "亅",
+        "八"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "少",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "小",
+      "decomposition": "⿱小丿",
+      "structure": "trên – dưới",
+      "components": [
+        "小",
+        "丿"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
+    },
+    {
+      "character": "尝",
+      "radical": "⺌",
+      "decomposition": "⿱尚云",
+      "structure": "trên – dưới",
+      "components": [
+        "尚",
+        "云"
+      ],
+      "formation": "hình thanh",
+      "semantic": "云",
+      "phonetic": "尚",
+      "available": true
     },
     {
       "character": "屋",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "尸",
+      "decomposition": "⿸尸至",
+      "structure": "bao quanh từ trên-trái",
+      "components": [
+        "尸",
+        "至"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "岁",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "山",
+      "decomposition": "⿱山夕",
+      "structure": "trên – dưới",
+      "components": [
+        "山",
+        "夕"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "工",
-      "radical": "",
+      "radical": "工",
+      "decomposition": "⿱一丄",
+      "structure": "trên – dưới",
+      "components": [
+        "一",
+        "丄"
+      ],
+      "formation": "tượng hình",
+      "semantic": "",
+      "phonetic": "",
+      "available": true
+    },
+    {
+      "character": "已",
+      "radical": "己",
       "decomposition": "",
       "structure": "chữ đơn/thành phần chưa xác định",
       "components": [],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "币",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "巾",
+      "decomposition": "⿻丿巾",
+      "structure": "chồng/đan xen",
+      "components": [
+        "丿",
+        "巾"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "市",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "巾",
+      "decomposition": "⿱亠巾",
+      "structure": "trên – dưới",
+      "components": [
+        "亠",
+        "巾"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "师",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "巾",
+      "decomposition": "⿰刂帀",
+      "structure": "trái – phải",
+      "components": [
+        "刂",
+        "帀"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
+    },
+    {
+      "character": "常",
+      "radical": "巾",
+      "decomposition": "⿱尚巾",
+      "structure": "trên – dưới",
+      "components": [
+        "尚",
+        "巾"
+      ],
+      "formation": "hình thanh",
+      "semantic": "巾",
+      "phonetic": "尚",
+      "available": true
     },
     {
       "character": "平",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "广",
+      "decomposition": "⿻干丷",
+      "structure": "chồng/đan xen",
+      "components": [
+        "干",
+        "丷"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "床",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "广",
+      "decomposition": "⿸广木",
+      "structure": "bao quanh từ trên-trái",
+      "components": [
+        "广",
+        "木"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "店",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "广",
+      "decomposition": "⿸广占",
+      "structure": "bao quanh từ trên-trái",
+      "components": [
+        "广",
+        "占"
+      ],
+      "formation": "hình thanh",
+      "semantic": "广",
+      "phonetic": "占",
+      "available": true
     },
     {
       "character": "开",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "廾",
+      "decomposition": "⿱一廾",
+      "structure": "trên – dưới",
+      "components": [
+        "一",
+        "廾"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "弟",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "弓",
+      "decomposition": "⿱丷⿻弓？",
+      "structure": "trên – dưới",
+      "components": [
+        "丷",
+        "弓"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "张",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "弓",
+      "decomposition": "⿰弓长",
+      "structure": "trái – phải",
+      "components": [
+        "弓",
+        "长"
+      ],
+      "formation": "hình thanh",
+      "semantic": "弓",
+      "phonetic": "长",
+      "available": true
     },
     {
       "character": "当",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "⺌",
+      "decomposition": "⿱⺌彐",
+      "structure": "trên – dưới",
+      "components": [
+        "⺌",
+        "彐"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
+    },
+    {
+      "character": "影",
+      "radical": "彡",
+      "decomposition": "⿰景彡",
+      "structure": "trái – phải",
+      "components": [
+        "景",
+        "彡"
+      ],
+      "formation": "hình thanh",
+      "semantic": "彡",
+      "phonetic": "景",
+      "available": true
     },
     {
       "character": "很",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "彳",
+      "decomposition": "⿰彳艮",
+      "structure": "trái – phải",
+      "components": [
+        "彳",
+        "艮"
+      ],
+      "formation": "hình thanh",
+      "semantic": "彳",
+      "phonetic": "艮",
+      "available": true
     },
     {
       "character": "得",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "彳",
+      "decomposition": "⿰彳⿱旦寸",
+      "structure": "trái – phải",
+      "components": [
+        "彳",
+        "旦",
+        "寸"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "德",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
+      "radical": "彳",
+      "decomposition": "⿰彳⿱⿱十罒⿱一心",
+      "structure": "trái – phải",
+      "components": [
+        "彳",
+        "十",
+        "罒",
+        "一",
+        "心"
+      ],
+      "formation": "hình thanh",
+      "semantic": "心",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "心",
-      "radical": "",
+      "radical": "心",
       "decomposition": "",
       "structure": "chữ đơn/thành phần chưa xác định",
       "components": [],
-      "formation": "",
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "志",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "心",
+      "decomposition": "⿱士心",
+      "structure": "trên – dưới",
+      "components": [
+        "士",
+        "心"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "忙",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "忄",
+      "decomposition": "⿰忄亡",
+      "structure": "trái – phải",
+      "components": [
+        "忄",
+        "亡"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "怎",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "心",
+      "decomposition": "⿱乍心",
+      "structure": "trên – dưới",
+      "components": [
+        "乍",
+        "心"
+      ],
+      "formation": "hình thanh",
+      "semantic": "心",
+      "phonetic": "乍",
+      "available": true
+    },
+    {
+      "character": "总",
+      "radical": "心",
+      "decomposition": "⿳丷口心",
+      "structure": "trên – giữa – dưới",
+      "components": [
+        "丷",
+        "口",
+        "心"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
+    },
+    {
+      "character": "息",
+      "radical": "心",
+      "decomposition": "⿱自心",
+      "structure": "trên – dưới",
+      "components": [
+        "自",
+        "心"
+      ],
+      "formation": "hội ý/chỉ sự",
+      "semantic": "",
+      "phonetic": "",
+      "available": true
     },
     {
       "character": "您",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "心",
+      "decomposition": "⿱你心",
+      "structure": "trên – dưới",
+      "components": [
+        "你",
+        "心"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "想",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "心",
+      "decomposition": "⿱相心",
+      "structure": "trên – dưới",
+      "components": [
+        "相",
+        "心"
+      ],
+      "formation": "hình thanh",
+      "semantic": "心",
+      "phonetic": "相",
+      "available": true
     },
     {
       "character": "我",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "戈",
+      "decomposition": "⿰扌戈",
+      "structure": "trái – phải",
+      "components": [
+        "扌",
+        "戈"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "房",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "户",
+      "decomposition": "⿸户方",
+      "structure": "bao quanh từ trên-trái",
+      "components": [
+        "户",
+        "方"
+      ],
+      "formation": "hình thanh",
+      "semantic": "户",
+      "phonetic": "方",
+      "available": true
     },
     {
       "character": "手",
-      "radical": "",
+      "radical": "手",
       "decomposition": "",
       "structure": "chữ đơn/thành phần chưa xác định",
       "components": [],
-      "formation": "",
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "找",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "扌",
+      "decomposition": "⿰扌戈",
+      "structure": "trái – phải",
+      "components": [
+        "扌",
+        "戈"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "拍",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "扌",
+      "decomposition": "⿰扌白",
+      "structure": "trái – phải",
+      "components": [
+        "扌",
+        "白"
+      ],
+      "formation": "hình thanh",
+      "semantic": "扌",
+      "phonetic": "白",
+      "available": true
     },
     {
       "character": "换",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "扌",
+      "decomposition": "⿰扌奂",
+      "structure": "trái – phải",
+      "components": [
+        "扌",
+        "奂"
+      ],
+      "formation": "hình thanh",
+      "semantic": "扌",
+      "phonetic": "奂",
+      "available": true
     },
     {
       "character": "教",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "攵",
+      "decomposition": "⿰孝攵",
+      "structure": "trái – phải",
+      "components": [
+        "孝",
+        "攵"
+      ],
+      "formation": "hình thanh",
+      "semantic": "攵",
+      "phonetic": "孝",
+      "available": true
     },
     {
       "character": "料",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "斗",
+      "decomposition": "⿰米斗",
+      "structure": "trái – phải",
+      "components": [
+        "米",
+        "斗"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "斤",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "斤",
+      "decomposition": "⿸厂下",
+      "structure": "bao quanh từ trên-trái",
+      "components": [
+        "厂",
+        "下"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "新",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "斤",
+      "decomposition": "⿰亲斤",
+      "structure": "trái – phải",
+      "components": [
+        "亲",
+        "斤"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "日",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "日",
+      "decomposition": "⿴口一",
+      "structure": "bao quanh kín",
+      "components": [
+        "口",
+        "一"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "旧",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "日",
+      "decomposition": "⿰丨日",
+      "structure": "trái – phải",
+      "components": [
+        "丨",
+        "日"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "早",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "日",
+      "decomposition": "⿱日十",
+      "structure": "trên – dưới",
+      "components": [
+        "日",
+        "十"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
+    },
+    {
+      "character": "时",
+      "radical": "日",
+      "decomposition": "⿰日寸",
+      "structure": "trái – phải",
+      "components": [
+        "日",
+        "寸"
+      ],
+      "formation": "hình thanh",
+      "semantic": "日",
+      "phonetic": "",
+      "available": true
     },
     {
       "character": "明",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "日",
+      "decomposition": "⿰日月",
+      "structure": "trái – phải",
+      "components": [
+        "日",
+        "月"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "易",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "日",
+      "decomposition": "⿱日勿",
+      "structure": "trên – dưới",
+      "components": [
+        "日",
+        "勿"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "星",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "日",
+      "decomposition": "⿱日生",
+      "structure": "trên – dưới",
+      "components": [
+        "日",
+        "生"
+      ],
+      "formation": "hình thanh",
+      "semantic": "日",
+      "phonetic": "生",
+      "available": true
     },
     {
       "character": "昨",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "日",
+      "decomposition": "⿰日乍",
+      "structure": "trái – phải",
+      "components": [
+        "日",
+        "乍"
+      ],
+      "formation": "hình thanh",
+      "semantic": "日",
+      "phonetic": "乍",
+      "available": true
     },
     {
       "character": "是",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "日",
+      "decomposition": "⿱日疋",
+      "structure": "trên – dưới",
+      "components": [
+        "日",
+        "疋"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "晚",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "日",
+      "decomposition": "⿰日免",
+      "structure": "trái – phải",
+      "components": [
+        "日",
+        "免"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "最",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "曰",
+      "decomposition": "⿱日取",
+      "structure": "trên – dưới",
+      "components": [
+        "日",
+        "取"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "月",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "月",
+      "decomposition": "⿵冂二",
+      "structure": "bao quanh, hở dưới",
+      "components": [
+        "冂",
+        "二"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "有",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "月",
+      "decomposition": "⿸？月",
+      "structure": "bao quanh từ trên-trái",
+      "components": [
+        "月"
+      ],
+      "formation": "hình thanh",
       "semantic": "",
-      "phonetic": "",
-      "available": false
+      "phonetic": "月",
+      "available": true
     },
     {
       "character": "朋",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "月",
+      "decomposition": "⿰月月",
+      "structure": "trái – phải",
+      "components": [
+        "月"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "服",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "月",
+      "decomposition": "⿰月⿸卩又",
+      "structure": "trái – phải",
+      "components": [
+        "月",
+        "卩",
+        "又"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "期",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "月",
+      "decomposition": "⿰其月",
+      "structure": "trái – phải",
+      "components": [
+        "其",
+        "月"
+      ],
+      "formation": "hình thanh",
+      "semantic": "月",
+      "phonetic": "其",
+      "available": true
     },
     {
       "character": "本",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "木",
+      "decomposition": "⿻木一",
+      "structure": "chồng/đan xen",
+      "components": [
+        "木",
+        "一"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "机",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "木",
+      "decomposition": "⿰木几",
+      "structure": "trái – phải",
+      "components": [
+        "木",
+        "几"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "李",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "木",
+      "decomposition": "⿱木子",
+      "structure": "trên – dưới",
+      "components": [
+        "木",
+        "子"
+      ],
+      "formation": "hình thanh",
+      "semantic": "木",
+      "phonetic": "子",
+      "available": true
     },
     {
       "character": "条",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "木",
+      "decomposition": "⿱夂木",
+      "structure": "trên – dưới",
+      "components": [
+        "夂",
+        "木"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "来",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "木",
+      "decomposition": "⿻未丷",
+      "structure": "chồng/đan xen",
+      "components": [
+        "未",
+        "丷"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "杯",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "木",
+      "decomposition": "⿰木不",
+      "structure": "trái – phải",
+      "components": [
+        "木",
+        "不"
+      ],
+      "formation": "hình thanh",
+      "semantic": "木",
+      "phonetic": "不",
+      "available": true
     },
     {
       "character": "板",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "木",
+      "decomposition": "⿰木反",
+      "structure": "trái – phải",
+      "components": [
+        "木",
+        "反"
+      ],
+      "formation": "hình thanh",
+      "semantic": "木",
+      "phonetic": "反",
+      "available": true
     },
     {
       "character": "果",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "木",
+      "decomposition": "⿱田木",
+      "structure": "trên – dưới",
+      "components": [
+        "田",
+        "木"
+      ],
+      "formation": "hội ý/chỉ sự",
+      "semantic": "",
+      "phonetic": "",
+      "available": true
+    },
+    {
+      "character": "查",
+      "radical": "木",
+      "decomposition": "⿱木旦",
+      "structure": "trên – dưới",
+      "components": [
+        "木",
+        "旦"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "校",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "木",
+      "decomposition": "⿰木交",
+      "structure": "trái – phải",
+      "components": [
+        "木",
+        "交"
+      ],
+      "formation": "hình thanh",
+      "semantic": "木",
+      "phonetic": "交",
+      "available": true
     },
     {
       "character": "楼",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "木",
+      "decomposition": "⿰木娄",
+      "structure": "trái – phải",
+      "components": [
+        "木",
+        "娄"
+      ],
+      "formation": "hình thanh",
+      "semantic": "木",
+      "phonetic": "娄",
+      "available": true
     },
     {
       "character": "概",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "木",
+      "decomposition": "⿰木既",
+      "structure": "trái – phải",
+      "components": [
+        "木",
+        "既"
+      ],
+      "formation": "hình thanh",
+      "semantic": "木",
+      "phonetic": "既",
+      "available": true
     },
     {
       "character": "欢",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "欠",
+      "decomposition": "⿰又欠",
+      "structure": "trái – phải",
+      "components": [
+        "又",
+        "欠"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "比",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "比",
+      "decomposition": "⿰匕匕",
+      "structure": "trái – phải",
+      "components": [
+        "匕"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "毛",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "毛",
+      "decomposition": "⿻乇一",
+      "structure": "chồng/đan xen",
+      "components": [
+        "乇",
+        "一"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "民",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "民",
+      "decomposition": "⿻巳戈",
+      "structure": "chồng/đan xen",
+      "components": [
+        "巳",
+        "戈"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "水",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "水",
+      "decomposition": "⿻亅？",
+      "structure": "chồng/đan xen",
+      "components": [
+        "亅"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "汉",
@@ -2083,652 +2790,975 @@
     },
     {
       "character": "汤",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "氵",
+      "decomposition": "⿰氵昜",
+      "structure": "trái – phải",
+      "components": [
+        "氵",
+        "昜"
+      ],
+      "formation": "hình thanh",
+      "semantic": "氵",
+      "phonetic": "昜",
+      "available": true
     },
     {
       "character": "汽",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "氵",
+      "decomposition": "⿰氵气",
+      "structure": "trái – phải",
+      "components": [
+        "氵",
+        "气"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "河",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "氵",
+      "decomposition": "⿰氵可",
+      "structure": "trái – phải",
+      "components": [
+        "氵",
+        "可"
+      ],
+      "formation": "hình thanh",
+      "semantic": "氵",
+      "phonetic": "可",
+      "available": true
     },
     {
       "character": "法",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "氵",
+      "decomposition": "⿰氵去",
+      "structure": "trái – phải",
+      "components": [
+        "氵",
+        "去"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
+    },
+    {
+      "character": "洗",
+      "radical": "氵",
+      "decomposition": "⿰氵先",
+      "structure": "trái – phải",
+      "components": [
+        "氵",
+        "先"
+      ],
+      "formation": "hình thanh",
+      "semantic": "氵",
+      "phonetic": "先",
+      "available": true
     },
     {
       "character": "渴",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "氵",
+      "decomposition": "⿰氵曷",
+      "structure": "trái – phải",
+      "components": [
+        "氵",
+        "曷"
+      ],
+      "formation": "hình thanh",
+      "semantic": "氵",
+      "phonetic": "曷",
+      "available": true
+    },
+    {
+      "character": "澡",
+      "radical": "氵",
+      "decomposition": "⿰氵喿",
+      "structure": "trái – phải",
+      "components": [
+        "氵",
+        "喿"
+      ],
+      "formation": "hình thanh",
+      "semantic": "氵",
+      "phonetic": "喿",
+      "available": true
     },
     {
       "character": "火",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "火",
+      "decomposition": "⿻丷人",
+      "structure": "chồng/đan xen",
+      "components": [
+        "丷",
+        "人"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "点",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "灬",
+      "decomposition": "⿱占灬",
+      "structure": "trên – dưới",
+      "components": [
+        "占",
+        "灬"
+      ],
+      "formation": "hình thanh",
+      "semantic": "灬",
+      "phonetic": "占",
+      "available": true
     },
     {
       "character": "照",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "灬",
+      "decomposition": "⿱昭灬",
+      "structure": "trên – dưới",
+      "components": [
+        "昭",
+        "灬"
+      ],
+      "formation": "hình thanh",
+      "semantic": "灬",
+      "phonetic": "昭",
+      "available": true
     },
     {
       "character": "爸",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "父",
+      "decomposition": "⿱父巴",
+      "structure": "trên – dưới",
+      "components": [
+        "父",
+        "巴"
+      ],
+      "formation": "hình thanh",
+      "semantic": "父",
+      "phonetic": "巴",
+      "available": true
     },
     {
       "character": "片",
-      "radical": "",
+      "radical": "片",
+      "decomposition": "⿸？？",
+      "structure": "bao quanh từ trên-trái",
+      "components": [],
+      "formation": "tượng hình",
+      "semantic": "",
+      "phonetic": "",
+      "available": true
+    },
+    {
+      "character": "牙",
+      "radical": "牙",
       "decomposition": "",
       "structure": "chữ đơn/thành phần chưa xác định",
       "components": [],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "牛",
-      "radical": "",
+      "radical": "牛",
       "decomposition": "",
       "structure": "chữ đơn/thành phần chưa xác định",
       "components": [],
-      "formation": "",
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "玩",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "王",
+      "decomposition": "⿰王元",
+      "structure": "trái – phải",
+      "components": [
+        "王",
+        "元"
+      ],
+      "formation": "hình thanh",
+      "semantic": "王",
+      "phonetic": "元",
+      "available": true
+    },
+    {
+      "character": "现",
+      "radical": "王",
+      "decomposition": "⿰王见",
+      "structure": "trái – phải",
+      "components": [
+        "王",
+        "见"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "班",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "王",
+      "decomposition": "⿲王刂王",
+      "structure": "trái – giữa – phải",
+      "components": [
+        "王",
+        "刂"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "理",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "王",
+      "decomposition": "⿰王里",
+      "structure": "trái – phải",
+      "components": [
+        "王",
+        "里"
+      ],
+      "formation": "hình thanh",
+      "semantic": "王",
+      "phonetic": "里",
+      "available": true
     },
     {
       "character": "瓜",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "瓜",
+      "decomposition": "⿵？厶",
+      "structure": "bao quanh, hở dưới",
+      "components": [
+        "厶"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "生",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "生",
+      "decomposition": "⿻一土",
+      "structure": "chồng/đan xen",
+      "components": [
+        "一",
+        "土"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "电",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "曰",
+      "decomposition": "⿻曰乚",
+      "structure": "chồng/đan xen",
+      "components": [
+        "曰",
+        "乚"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "男",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "田",
+      "decomposition": "⿱田力",
+      "structure": "trên – dưới",
+      "components": [
+        "田",
+        "力"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "留",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "田",
+      "decomposition": "⿱卯田",
+      "structure": "trên – dưới",
+      "components": [
+        "卯",
+        "田"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "病",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "疒",
+      "decomposition": "⿸疒丙",
+      "structure": "bao quanh từ trên-trái",
+      "components": [
+        "疒",
+        "丙"
+      ],
+      "formation": "hình thanh",
+      "semantic": "疒",
+      "phonetic": "丙",
+      "available": true
     },
     {
       "character": "白",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "白",
+      "decomposition": "⿻？日",
+      "structure": "chồng/đan xen",
+      "components": [
+        "日"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "百",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "白",
+      "decomposition": "⿱一白",
+      "structure": "trên – dưới",
+      "components": [
+        "一",
+        "白"
+      ],
+      "formation": "hình thanh",
+      "semantic": "一",
+      "phonetic": "白",
+      "available": true
     },
     {
       "character": "的",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "白",
+      "decomposition": "⿰白勺",
+      "structure": "trái – phải",
+      "components": [
+        "白",
+        "勺"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "相",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "目",
+      "decomposition": "⿰木目",
+      "structure": "trái – phải",
+      "components": [
+        "木",
+        "目"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "盾",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "目",
+      "decomposition": "⿸厂⿱十目",
+      "structure": "bao quanh từ trên-trái",
+      "components": [
+        "厂",
+        "十",
+        "目"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "看",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "目",
+      "decomposition": "⿱手目",
+      "structure": "trên – dưới",
+      "components": [
+        "手",
+        "目"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "真",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "目",
+      "decomposition": "⿱直几",
+      "structure": "trên – dưới",
+      "components": [
+        "直",
+        "几"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
+    },
+    {
+      "character": "睡",
+      "radical": "目",
+      "decomposition": "⿰目垂",
+      "structure": "trái – phải",
+      "components": [
+        "目",
+        "垂"
+      ],
+      "formation": "hình thanh",
+      "semantic": "目",
+      "phonetic": "垂",
+      "available": true
     },
     {
       "character": "知",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "矢",
+      "decomposition": "⿰矢口",
+      "structure": "trái – phải",
+      "components": [
+        "矢",
+        "口"
+      ],
+      "formation": "hình thanh",
+      "semantic": "口",
+      "phonetic": "矢",
+      "available": true
     },
     {
       "character": "码",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "石",
+      "decomposition": "⿰石马",
+      "structure": "trái – phải",
+      "components": [
+        "石",
+        "马"
+      ],
+      "formation": "hình thanh",
+      "semantic": "石",
+      "phonetic": "马",
+      "available": true
     },
     {
       "character": "碗",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "石",
+      "decomposition": "⿰石宛",
+      "structure": "trái – phải",
+      "components": [
+        "石",
+        "宛"
+      ],
+      "formation": "hình thanh",
+      "semantic": "石",
+      "phonetic": "宛",
+      "available": true
     },
     {
       "character": "等",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "⺮",
+      "decomposition": "⿱⺮寺",
+      "structure": "trên – dưới",
+      "components": [
+        "⺮",
+        "寺"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "箱",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "⺮",
+      "decomposition": "⿱⺮相",
+      "structure": "trên – dưới",
+      "components": [
+        "⺮",
+        "相"
+      ],
+      "formation": "hình thanh",
+      "semantic": "⺮",
+      "phonetic": "相",
+      "available": true
     },
     {
       "character": "米",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "米",
+      "decomposition": "⿻丷木",
+      "structure": "chồng/đan xen",
+      "components": [
+        "丷",
+        "木"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "红",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "纟",
+      "decomposition": "⿰纟工",
+      "structure": "trái – phải",
+      "components": [
+        "纟",
+        "工"
+      ],
+      "formation": "hình thanh",
+      "semantic": "纟",
+      "phonetic": "工",
+      "available": true
     },
     {
       "character": "绍",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "纟",
+      "decomposition": "⿰纟召",
+      "structure": "trái – phải",
+      "components": [
+        "纟",
+        "召"
+      ],
+      "formation": "hình thanh",
+      "semantic": "纟",
+      "phonetic": "召",
+      "available": true
     },
     {
       "character": "经",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "纟",
+      "decomposition": "⿰纟⿱？工",
+      "structure": "trái – phải",
+      "components": [
+        "纟",
+        "工"
+      ],
+      "formation": "hình thanh",
+      "semantic": "纟",
+      "phonetic": "工",
+      "available": true
     },
     {
       "character": "给",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "纟",
+      "decomposition": "⿰纟合",
+      "structure": "trái – phải",
+      "components": [
+        "纟",
+        "合"
+      ],
+      "formation": "hình thanh",
+      "semantic": "纟",
+      "phonetic": "合",
+      "available": true
+    },
+    {
+      "character": "网",
+      "radical": "网",
+      "decomposition": "⿵冂⿰乂乂",
+      "structure": "bao quanh, hở dưới",
+      "components": [
+        "冂",
+        "乂"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "美",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "羊",
+      "decomposition": "⿱羊大",
+      "structure": "trên – dưới",
+      "components": [
+        "羊",
+        "大"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "老",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "老",
+      "decomposition": "⿱耂匕",
+      "structure": "trên – dưới",
+      "components": [
+        "耂",
+        "匕"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
+    },
+    {
+      "character": "聊",
+      "radical": "耳",
+      "decomposition": "⿰耳卯",
+      "structure": "trái – phải",
+      "components": [
+        "耳",
+        "卯"
+      ],
+      "formation": "hình thanh",
+      "semantic": "耳",
+      "phonetic": "卯",
+      "available": true
     },
     {
       "character": "职",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "耳",
+      "decomposition": "⿰耳只",
+      "structure": "trái – phải",
+      "components": [
+        "耳",
+        "只"
+      ],
+      "formation": "hình thanh",
+      "semantic": "耳",
+      "phonetic": "只",
+      "available": true
     },
     {
       "character": "胡",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "⺼",
+      "decomposition": "⿰古⺼",
+      "structure": "trái – phải",
+      "components": [
+        "古",
+        "⺼"
+      ],
+      "formation": "hình thanh",
+      "semantic": "⺼",
+      "phonetic": "古",
+      "available": true
+    },
+    {
+      "character": "臭",
+      "radical": "自",
+      "decomposition": "⿱自犬",
+      "structure": "trên – dưới",
+      "components": [
+        "自",
+        "犬"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
+    },
+    {
+      "character": "舌",
+      "radical": "舌",
+      "decomposition": "⿱千口",
+      "structure": "trên – dưới",
+      "components": [
+        "千",
+        "口"
+      ],
+      "formation": "tượng hình",
+      "semantic": "",
+      "phonetic": "",
+      "available": true
+    },
+    {
+      "character": "舍",
+      "radical": "舌",
+      "decomposition": "⿱人舌",
+      "structure": "trên – dưới",
+      "components": [
+        "人",
+        "舌"
+      ],
+      "formation": "hình thanh",
+      "semantic": "人",
+      "phonetic": "舌",
+      "available": true
     },
     {
       "character": "色",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "色",
+      "decomposition": "⿱⺈巴",
+      "structure": "trên – dưới",
+      "components": [
+        "⺈",
+        "巴"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "英",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "艹",
+      "decomposition": "⿱艹央",
+      "structure": "trên – dưới",
+      "components": [
+        "艹",
+        "央"
+      ],
+      "formation": "hình thanh",
+      "semantic": "艹",
+      "phonetic": "央",
+      "available": true
     },
     {
       "character": "苹",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "艹",
+      "decomposition": "⿱艹平",
+      "structure": "trên – dưới",
+      "components": [
+        "艹",
+        "平"
+      ],
+      "formation": "hình thanh",
+      "semantic": "艹",
+      "phonetic": "平",
+      "available": true
     },
     {
       "character": "茶",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
+      "radical": "艹",
+      "decomposition": "⿱艹⿱人木",
+      "structure": "trên – dưới",
+      "components": [
+        "艹",
+        "人",
+        "木"
+      ],
+      "formation": "hình thanh",
+      "semantic": "艹",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "药",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "艹",
+      "decomposition": "⿱艹约",
+      "structure": "trên – dưới",
+      "components": [
+        "艹",
+        "约"
+      ],
+      "formation": "hình thanh",
+      "semantic": "艹",
+      "phonetic": "约",
+      "available": true
     },
     {
       "character": "菜",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "艹",
+      "decomposition": "⿱艹采",
+      "structure": "trên – dưới",
+      "components": [
+        "艹",
+        "采"
+      ],
+      "formation": "hình thanh",
+      "semantic": "艹",
+      "phonetic": "采",
+      "available": true
     },
     {
       "character": "虎",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "虎",
+      "decomposition": "⿸虍几",
+      "structure": "bao quanh từ trên-trái",
+      "components": [
+        "虍",
+        "几"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "蛋",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "虫",
+      "decomposition": "⿱疋虫",
+      "structure": "trên – dưới",
+      "components": [
+        "疋",
+        "虫"
+      ],
+      "formation": "hình thanh",
+      "semantic": "虫",
+      "phonetic": "延",
+      "available": true
     },
     {
       "character": "行",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "行",
+      "decomposition": "⿰彳亍",
+      "structure": "trái – phải",
+      "components": [
+        "彳",
+        "亍"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "衣",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "衣",
+      "decomposition": "⿱亠？",
+      "structure": "trên – dưới",
+      "components": [
+        "亠"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "西",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "西",
+      "decomposition": "⿻兀囗",
+      "structure": "chồng/đan xen",
+      "components": [
+        "兀",
+        "囗"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "要",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "覀",
+      "decomposition": "⿱覀女",
+      "structure": "trên – dưới",
+      "components": [
+        "覀",
+        "女"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "见",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "见",
+      "decomposition": "⿵冂儿",
+      "structure": "bao quanh, hở dưới",
+      "components": [
+        "冂",
+        "儿"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "觉",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "见",
+      "decomposition": "⿳⺍冖见",
+      "structure": "trên – giữa – dưới",
+      "components": [
+        "⺍",
+        "冖",
+        "见"
+      ],
+      "formation": "hình thanh",
+      "semantic": "见",
+      "phonetic": "⺍",
+      "available": true
     },
     {
       "character": "言",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "言",
+      "decomposition": "⿱亠⿱二口",
+      "structure": "trên – dưới",
+      "components": [
+        "亠",
+        "二",
+        "口"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "认",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "讠",
+      "decomposition": "⿰讠人",
+      "structure": "trái – phải",
+      "components": [
+        "讠",
+        "人"
+      ],
+      "formation": "hình thanh",
+      "semantic": "讠",
+      "phonetic": "人",
+      "available": true
     },
     {
       "character": "识",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "讠",
+      "decomposition": "⿰讠只",
+      "structure": "trái – phải",
+      "components": [
+        "讠",
+        "只"
+      ],
+      "formation": "hình thanh",
+      "semantic": "讠",
+      "phonetic": "只",
+      "available": true
+    },
+    {
+      "character": "词",
+      "radical": "讠",
+      "decomposition": "⿰讠司",
+      "structure": "trái – phải",
+      "components": [
+        "讠",
+        "司"
+      ],
+      "formation": "hình thanh",
+      "semantic": "讠",
+      "phonetic": "司",
+      "available": true
     },
     {
       "character": "话",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "讠",
+      "decomposition": "⿰讠舌",
+      "structure": "trái – phải",
+      "components": [
+        "讠",
+        "舌"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "语",
@@ -2760,531 +3790,713 @@
     },
     {
       "character": "请",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "讠",
+      "decomposition": "⿰讠青",
+      "structure": "trái – phải",
+      "components": [
+        "讠",
+        "青"
+      ],
+      "formation": "hình thanh",
+      "semantic": "讠",
+      "phonetic": "青",
+      "available": true
+    },
+    {
+      "character": "课",
+      "radical": "讠",
+      "decomposition": "⿰讠果",
+      "structure": "trái – phải",
+      "components": [
+        "讠",
+        "果"
+      ],
+      "formation": "hình thanh",
+      "semantic": "讠",
+      "phonetic": "果",
+      "available": true
     },
     {
       "character": "谁",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "讠",
+      "decomposition": "⿰讠隹",
+      "structure": "trái – phải",
+      "components": [
+        "讠",
+        "隹"
+      ],
+      "formation": "hình thanh",
+      "semantic": "讠",
+      "phonetic": "隹",
+      "available": true
     },
     {
       "character": "谚",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "讠",
+      "decomposition": "⿰讠彦",
+      "structure": "trái – phải",
+      "components": [
+        "讠",
+        "彦"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "谢",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "讠",
+      "decomposition": "⿰讠射",
+      "structure": "trái – phải",
+      "components": [
+        "讠",
+        "射"
+      ],
+      "formation": "hình thanh",
+      "semantic": "讠",
+      "phonetic": "射",
+      "available": true
     },
     {
       "character": "贵",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
+      "radical": "贝",
+      "decomposition": "⿱⿱中一贝",
+      "structure": "trên – dưới",
+      "components": [
+        "中",
+        "一",
+        "贝"
+      ],
+      "formation": "hình thanh",
+      "semantic": "贝",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "起",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "走",
+      "decomposition": "⿺走己",
+      "structure": "bao quanh từ dưới-trái",
+      "components": [
+        "走",
+        "己"
+      ],
+      "formation": "hình thanh",
+      "semantic": "走",
+      "phonetic": "己",
+      "available": true
     },
     {
       "character": "超",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "走",
+      "decomposition": "⿺走召",
+      "structure": "bao quanh từ dưới-trái",
+      "components": [
+        "走",
+        "召"
+      ],
+      "formation": "hình thanh",
+      "semantic": "走",
+      "phonetic": "召",
+      "available": true
     },
     {
       "character": "越",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "走",
+      "decomposition": "⿺走戉",
+      "structure": "bao quanh từ dưới-trái",
+      "components": [
+        "走",
+        "戉"
+      ],
+      "formation": "hình thanh",
+      "semantic": "走",
+      "phonetic": "戉",
+      "available": true
+    },
+    {
+      "character": "跟",
+      "radical": "足",
+      "decomposition": "⿰足艮",
+      "structure": "trái – phải",
+      "components": [
+        "足",
+        "艮"
+      ],
+      "formation": "hình thanh",
+      "semantic": "足",
+      "phonetic": "艮",
+      "available": true
     },
     {
       "character": "车",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "车",
+      "decomposition": "⿻七十",
+      "structure": "chồng/đan xen",
+      "components": [
+        "七",
+        "十"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "轻",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "车",
+      "decomposition": "⿰车⿱又工",
+      "structure": "trái – phải",
+      "components": [
+        "车",
+        "又",
+        "工"
+      ],
+      "formation": "hình thanh",
+      "semantic": "车",
+      "phonetic": "工",
+      "available": true
     },
     {
       "character": "较",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "车",
+      "decomposition": "⿰车交",
+      "structure": "trái – phải",
+      "components": [
+        "车",
+        "交"
+      ],
+      "formation": "hình thanh",
+      "semantic": "车",
+      "phonetic": "交",
+      "available": true
     },
     {
       "character": "辆",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "车",
+      "decomposition": "⿰车两",
+      "structure": "trái – phải",
+      "components": [
+        "车",
+        "两"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
+    },
+    {
+      "character": "过",
+      "radical": "辶",
+      "decomposition": "⿺辶寸",
+      "structure": "bao quanh từ dưới-trái",
+      "components": [
+        "辶",
+        "寸"
+      ],
+      "formation": "hình thanh",
+      "semantic": "辶",
+      "phonetic": "咼",
+      "available": true
     },
     {
       "character": "迎",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "辶",
+      "decomposition": "⿺辶卬",
+      "structure": "bao quanh từ dưới-trái",
+      "components": [
+        "辶",
+        "卬"
+      ],
+      "formation": "hình thanh",
+      "semantic": "辶",
+      "phonetic": "卬",
+      "available": true
     },
     {
       "character": "近",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "辶",
+      "decomposition": "⿺辶斤",
+      "structure": "bao quanh từ dưới-trái",
+      "components": [
+        "辶",
+        "斤"
+      ],
+      "formation": "hình thanh",
+      "semantic": "辶",
+      "phonetic": "斤",
+      "available": true
     },
     {
       "character": "还",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "辶",
+      "decomposition": "⿺辶不",
+      "structure": "bao quanh từ dưới-trái",
+      "components": [
+        "辶",
+        "不"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "这",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "辶",
+      "decomposition": "⿺辶文",
+      "structure": "bao quanh từ dưới-trái",
+      "components": [
+        "辶",
+        "文"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "进",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "辶",
+      "decomposition": "⿺辶井",
+      "structure": "bao quanh từ dưới-trái",
+      "components": [
+        "辶",
+        "井"
+      ],
+      "formation": "hình thanh",
+      "semantic": "辶",
+      "phonetic": "井",
+      "available": true
     },
     {
       "character": "道",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "辶",
+      "decomposition": "⿺辶首",
+      "structure": "bao quanh từ dưới-trái",
+      "components": [
+        "辶",
+        "首"
+      ],
+      "formation": "hình thanh",
+      "semantic": "辶",
+      "phonetic": "首",
+      "available": true
     },
     {
       "character": "那",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
+      "radical": "阝",
+      "decomposition": "⿰⿹？？阝",
+      "structure": "trái – phải",
+      "components": [
+        "阝"
+      ],
       "formation": "",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "酒",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "酉",
+      "decomposition": "⿰氵酉",
+      "structure": "trái – phải",
+      "components": [
+        "氵",
+        "酉"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "采",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "釆",
+      "decomposition": "⿱爫木",
+      "structure": "trên – dưới",
+      "components": [
+        "爫",
+        "木"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "里",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "里",
+      "decomposition": "⿱田土",
+      "structure": "trên – dưới",
+      "components": [
+        "田",
+        "土"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "重",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "里",
+      "decomposition": "⿻千里",
+      "structure": "chồng/đan xen",
+      "components": [
+        "千",
+        "里"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "钱",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "钅",
+      "decomposition": "⿰钅戋",
+      "structure": "trái – phải",
+      "components": [
+        "钅",
+        "戋"
+      ],
+      "formation": "hình thanh",
+      "semantic": "钅",
+      "phonetic": "戋",
+      "available": true
     },
     {
       "character": "银",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "钅",
+      "decomposition": "⿰钅艮",
+      "structure": "trái – phải",
+      "components": [
+        "钅",
+        "艮"
+      ],
+      "formation": "hình thanh",
+      "semantic": "钅",
+      "phonetic": "艮",
+      "available": true
     },
     {
       "character": "长",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "长",
+      "decomposition": "⿻？一",
+      "structure": "chồng/đan xen",
+      "components": [
+        "一"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "问",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "门",
+      "decomposition": "⿵门口",
+      "structure": "bao quanh, hở dưới",
+      "components": [
+        "门",
+        "口"
+      ],
+      "formation": "hình thanh",
+      "semantic": "口",
+      "phonetic": "门",
+      "available": true
     },
     {
       "character": "间",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "门",
+      "decomposition": "⿵门日",
+      "structure": "bao quanh, hở dưới",
+      "components": [
+        "门",
+        "日"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "院",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "阝",
+      "decomposition": "⿰阝完",
+      "structure": "trái – phải",
+      "components": [
+        "阝",
+        "完"
+      ],
+      "formation": "hình thanh",
+      "semantic": "阝",
+      "phonetic": "完",
+      "available": true
     },
     {
       "character": "难",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "又",
+      "decomposition": "⿰又隹",
+      "structure": "trái – phải",
+      "components": [
+        "又",
+        "隹"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "零",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "雨",
+      "decomposition": "⿱雨令",
+      "structure": "trên – dưới",
+      "components": [
+        "雨",
+        "令"
+      ],
+      "formation": "hình thanh",
+      "semantic": "雨",
+      "phonetic": "令",
+      "available": true
     },
     {
       "character": "面",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
+      "radical": "面",
+      "decomposition": "⿱？？",
+      "structure": "trên – dưới",
       "components": [],
-      "formation": "",
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "音",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "音",
+      "decomposition": "⿱立日",
+      "structure": "trên – dưới",
+      "components": [
+        "立",
+        "日"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "顶",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "页",
+      "decomposition": "⿰丁页",
+      "structure": "trái – phải",
+      "components": [
+        "丁",
+        "页"
+      ],
+      "formation": "hình thanh",
+      "semantic": "页",
+      "phonetic": "丁",
+      "available": true
     },
     {
       "character": "领",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "页",
+      "decomposition": "⿰令页",
+      "structure": "trái – phải",
+      "components": [
+        "令",
+        "页"
+      ],
+      "formation": "hình thanh",
+      "semantic": "页",
+      "phonetic": "令",
+      "available": true
     },
     {
       "character": "颜",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "页",
+      "decomposition": "⿰彦页",
+      "structure": "trái – phải",
+      "components": [
+        "彦",
+        "页"
+      ],
+      "formation": "hình thanh",
+      "semantic": "页",
+      "phonetic": "彦",
+      "available": true
     },
     {
       "character": "食",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "食",
+      "decomposition": "⿱人良",
+      "structure": "trên – dưới",
+      "components": [
+        "人",
+        "良"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "饭",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "饣",
+      "decomposition": "⿰饣反",
+      "structure": "trái – phải",
+      "components": [
+        "饣",
+        "反"
+      ],
+      "formation": "hình thanh",
+      "semantic": "饣",
+      "phonetic": "反",
+      "available": true
     },
     {
       "character": "饮",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "饣",
+      "decomposition": "⿰饣欠",
+      "structure": "trái – phải",
+      "components": [
+        "饣",
+        "欠"
+      ],
+      "formation": "hình thanh",
+      "semantic": "饣",
+      "phonetic": "欠",
+      "available": true
     },
     {
       "character": "饺",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "饣",
+      "decomposition": "⿰饣交",
+      "structure": "trái – phải",
+      "components": [
+        "饣",
+        "交"
+      ],
+      "formation": "hình thanh",
+      "semantic": "饣",
+      "phonetic": "交",
+      "available": true
     },
     {
       "character": "饿",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "饣",
+      "decomposition": "⿰饣我",
+      "structure": "trái – phải",
+      "components": [
+        "饣",
+        "我"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "馆",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "饣",
+      "decomposition": "⿰饣官",
+      "structure": "trái – phải",
+      "components": [
+        "饣",
+        "官"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "馒",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
-      "semantic": "",
-      "phonetic": "",
-      "available": false
+      "radical": "饣",
+      "decomposition": "⿰饣曼",
+      "structure": "trái – phải",
+      "components": [
+        "饣",
+        "曼"
+      ],
+      "formation": "hình thanh",
+      "semantic": "饣",
+      "phonetic": "曼",
+      "available": true
     },
     {
       "character": "马",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "马",
+      "decomposition": "⿹？一",
+      "structure": "bao quanh từ trên-phải",
+      "components": [
+        "一"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "高",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "高",
+      "decomposition": "⿳亠口冋",
+      "structure": "trên – giữa – dưới",
+      "components": [
+        "亠",
+        "口",
+        "冋"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "鸡",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "鸟",
+      "decomposition": "⿰又鸟",
+      "structure": "trái – phải",
+      "components": [
+        "又",
+        "鸟"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "黄",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "黄",
+      "decomposition": "⿱？⿱由八",
+      "structure": "trên – dưới",
+      "components": [
+        "由",
+        "八"
+      ],
+      "formation": "tượng hình",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     },
     {
       "character": "黑",
-      "radical": "",
-      "decomposition": "",
-      "structure": "chữ đơn/thành phần chưa xác định",
-      "components": [],
-      "formation": "",
+      "radical": "黑",
+      "decomposition": "⿱？灬",
+      "structure": "trên – dưới",
+      "components": [
+        "灬"
+      ],
+      "formation": "hội ý/chỉ sự",
       "semantic": "",
       "phonetic": "",
-      "available": false
+      "available": true
     }
   ]
 }

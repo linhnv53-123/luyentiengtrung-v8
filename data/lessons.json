@@ -3,10 +3,10 @@
   "metadata": {
     "name": "Từ vựng luyện chữ Hán",
     "generated_by": "tools/build-data.py",
-    "generated_at": "2026-08-02T15:32:47+00:00",
-    "revision": "3714ab61cba7adfb",
-    "lesson_count": 13,
-    "word_count": 301
+    "generated_at": "2026-08-08T18:44:38+00:00",
+    "revision": "d22e79abae701aa2",
+    "lesson_count": 14,
+    "word_count": 336
   },
   "lessons": [
     {
@@ -1589,6 +1589,187 @@
           "h": "白领",
           "p": "báilǐng",
           "m": "nhân viên văn phòng; người lao động cổ trắng"
+        }
+      ]
+    },
+    {
+      "id": "B16",
+      "title": "Bài 16",
+      "words": [
+        {
+          "h": "洗澡",
+          "p": "xǐzǎo",
+          "m": "Tắm"
+        },
+        {
+          "h": "换衣服",
+          "p": "huàn yīfu",
+          "m": "Thay quần áo"
+        },
+        {
+          "h": "睡觉",
+          "p": "shuìjiào",
+          "m": "Đi ngủ"
+        },
+        {
+          "h": "刷牙",
+          "p": "shuāyá",
+          "m": "Đánh răng"
+        },
+        {
+          "h": "生词",
+          "p": "shēngcí",
+          "m": "Từ mới"
+        },
+        {
+          "h": "查",
+          "p": "chá",
+          "m": "Tra, tìm"
+        },
+        {
+          "h": "音乐",
+          "p": "yīnyuè",
+          "m": "Âm nhạc"
+        },
+        {
+          "h": "借",
+          "p": "jiè",
+          "m": "Mượn"
+        },
+        {
+          "h": "还",
+          "p": "huán",
+          "m": "Trả"
+        },
+        {
+          "h": "上网",
+          "p": "shàngwǎng",
+          "m": "Lên mạng"
+        },
+        {
+          "h": "上课",
+          "p": "shàngkè",
+          "m": "Vào lớp"
+        },
+        {
+          "h": "上楼",
+          "p": "shànglóu",
+          "m": "Lên tầng/lầu"
+        },
+        {
+          "h": "聊天",
+          "p": "liáotiān",
+          "m": "Nói chuyện, chat"
+        },
+        {
+          "h": "很少",
+          "p": "hěn shǎo",
+          "m": "Rất hiếm, ít khi"
+        },
+        {
+          "h": "有时候",
+          "p": "yǒushíhou",
+          "m": "Có lúc, thỉnh thoảng"
+        },
+        {
+          "h": "常",
+          "p": "cháng",
+          "m": "Thường xuyên"
+        },
+        {
+          "h": "总是",
+          "p": "zǒngshì",
+          "m": "Luôn, luôn luôn"
+        },
+        {
+          "h": "已经",
+          "p": "yǐjīng",
+          "m": "Đã"
+        },
+        {
+          "h": "在",
+          "p": "zài",
+          "m": "Đang"
+        },
+        {
+          "h": "会",
+          "p": "huì",
+          "m": "Sẽ"
+        },
+        {
+          "h": "休息",
+          "p": "xiūxi",
+          "m": "Nghỉ ngơi"
+        },
+        {
+          "h": "臭",
+          "p": "chòu",
+          "m": "Thối"
+        },
+        {
+          "h": "宿舍",
+          "p": "sùshè",
+          "m": "Ký túc xá"
+        },
+        {
+          "h": "舌",
+          "p": "shé",
+          "m": "Lưỡi"
+        },
+        {
+          "h": "电影",
+          "p": "diànyǐng",
+          "m": "Phim"
+        },
+        {
+          "h": "京",
+          "p": "jīng",
+          "m": "Kinh thành"
+        },
+        {
+          "h": "现在",
+          "p": "xiànzài",
+          "m": "Bây giờ, hiện tại"
+        },
+        {
+          "h": "过",
+          "p": "guò",
+          "m": "Qua"
+        },
+        {
+          "h": "过去",
+          "p": "guòqù",
+          "m": "Quá khứ"
+        },
+        {
+          "h": "跟",
+          "p": "gēn",
+          "m": "Với, cùng"
+        },
+        {
+          "h": "时候",
+          "p": "shíhou",
+          "m": "...khi, ...lúc"
+        },
+        {
+          "h": "什么时候",
+          "p": "shénme shíhou",
+          "m": "Khi nào?"
+        },
+        {
+          "h": "的时候",
+          "p": "de shíhou",
+          "m": "Lúc ..., khi ..."
+        },
+        {
+          "h": "尝",
+          "p": "cháng",
+          "m": "Nếm"
+        },
+        {
+          "h": "一起",
+          "p": "yìqǐ",
+          "m": "Cùng nhau, together"
         }
       ]
     }
