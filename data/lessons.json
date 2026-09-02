@@ -3,10 +3,10 @@
   "metadata": {
     "name": "Từ vựng luyện chữ Hán",
     "generated_by": "tools/build-data.py",
-    "generated_at": "2026-08-08T18:44:38+00:00",
-    "revision": "d22e79abae701aa2",
-    "lesson_count": 14,
-    "word_count": 336
+    "generated_at": "2026-09-02T05:07:41+00:00",
+    "revision": "adc8e5698891efa4",
+    "lesson_count": 15,
+    "word_count": 352
   },
   "lessons": [
     {
@@ -1770,6 +1770,92 @@
           "h": "一起",
           "p": "yìqǐ",
           "m": "Cùng nhau, together"
+        }
+      ]
+    },
+    {
+      "id": "B17",
+      "title": "Bài 17",
+      "words": [
+        {
+          "h": "出",
+          "p": "chū",
+          "m": "Ra, xuất"
+        },
+        {
+          "h": "出国",
+          "p": "chūguó",
+          "m": "Xuất ngoại"
+        },
+        {
+          "h": "正在",
+          "p": "zhèngzài",
+          "m": "Đang (nhấn mạnh)"
+        },
+        {
+          "h": "没有",
+          "p": "méiyǒu",
+          "m": "Không có"
+        },
+        {
+          "h": "事",
+          "p": "shì",
+          "m": "Việc"
+        },
+        {
+          "h": "喜事",
+          "p": "xǐshì",
+          "m": "Chuyện vui"
+        },
+        {
+          "h": "骑",
+          "p": "qí",
+          "m": "Cưỡi, đi"
+        },
+        {
+          "h": "椅子",
+          "p": "yǐzi",
+          "m": "Cái ghế"
+        },
+        {
+          "h": "寄",
+          "p": "jì",
+          "m": "Gửi"
+        },
+        {
+          "h": "奇怪",
+          "p": "qíguài",
+          "m": "Kỳ quái, kỳ lạ"
+        },
+        {
+          "h": "摩托车",
+          "p": "mótuōchē",
+          "m": "Xe máy, motorbike"
+        },
+        {
+          "h": "自行车",
+          "p": "zìxíngchē",
+          "m": "Xe đạp"
+        },
+        {
+          "h": "电动车",
+          "p": "diàndòngchē",
+          "m": "Xe điện"
+        },
+        {
+          "h": "飞机",
+          "p": "fēijī",
+          "m": "Máy bay"
+        },
+        {
+          "h": "地铁",
+          "p": "dìtiě",
+          "m": "Tàu điện"
+        },
+        {
+          "h": "文化",
+          "p": "wénhuà",
+          "m": "Văn hóa"
         }
       ]
     }
