@@ -3,10 +3,10 @@
   "metadata": {
     "name": "Từ vựng luyện chữ Hán",
     "generated_by": "tools/build-data.py",
-    "generated_at": "2026-09-02T05:07:41+00:00",
-    "revision": "adc8e5698891efa4",
-    "lesson_count": 15,
-    "word_count": 352
+    "generated_at": "2026-09-07T17:10:16+00:00",
+    "revision": "319f3245567704bc",
+    "lesson_count": 16,
+    "word_count": 372
   },
   "lessons": [
     {
@@ -1856,6 +1856,112 @@
           "h": "文化",
           "p": "wénhuà",
           "m": "Văn hóa"
+        }
+      ]
+    },
+    {
+      "id": "B18",
+      "title": "Bài 18",
+      "words": [
+        {
+          "h": "包裹",
+          "p": "bāoguǒ",
+          "m": "Bưu phẩm"
+        },
+        {
+          "h": "包包",
+          "p": "bāobāo",
+          "m": "Túi xách"
+        },
+        {
+          "h": "拿",
+          "p": "ná",
+          "m": "Cầm, lấy"
+        },
+        {
+          "h": "快递",
+          "p": "kuàidì",
+          "m": "Hàng chuyển phát, hàng ship"
+        },
+        {
+          "h": "顺便",
+          "p": "shùnbiàn",
+          "m": "Nhân tiện"
+        },
+        {
+          "h": "方便",
+          "p": "fāngbiàn",
+          "m": "Thuận tiện, tiện lợi"
+        },
+        {
+          "h": "帮",
+          "p": "bāng",
+          "m": "Giúp, giúp đỡ"
+        },
+        {
+          "h": "替",
+          "p": "tì",
+          "m": "Thay, giúp, hộ"
+        },
+        {
+          "h": "邮票",
+          "p": "yóupiào",
+          "m": "Tem, phiếu"
+        },
+        {
+          "h": "报纸",
+          "p": "bàozhǐ",
+          "m": "Báo giấy"
+        },
+        {
+          "h": "份",
+          "p": "fèn",
+          "m": "Lượng từ: phần, suất; số, bản"
+        },
+        {
+          "h": "年",
+          "p": "nián",
+          "m": "Năm"
+        },
+        {
+          "h": "青年",
+          "p": "qīngnián",
+          "m": "Thanh niên"
+        },
+        {
+          "h": "用",
+          "p": "yòng",
+          "m": "Dùng, cần"
+        },
+        {
+          "h": "旅行",
+          "p": "lǚxíng",
+          "m": "Du lịch"
+        },
+        {
+          "h": "代表",
+          "p": "dàibiǎo",
+          "m": "Đại biểu, thay mặt"
+        },
+        {
+          "h": "手表",
+          "p": "shǒubiǎo",
+          "m": "Đồng hồ đeo tay"
+        },
+        {
+          "h": "团",
+          "p": "tuán",
+          "m": "Lượng từ: đoàn"
+        },
+        {
+          "h": "参观",
+          "p": "cānguān",
+          "m": "Tham quan"
+        },
+        {
+          "h": "翻译",
+          "p": "fānyì",
+          "m": "Phiên dịch"
         }
       ]
     }
