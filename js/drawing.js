@@ -291,9 +291,35 @@
     redrawPad(pad);
   }
 
+  // Điện thoại: chọn số cột cho ô lớn nhất mà vẫn nằm trên thanh nút dính ở đáy, không phải cuộn.
+  function fitMobileGrid(count) {
+    var gap = parseFloat(window.getComputedStyle(container).columnGap) || 0;
+    var width = container.clientWidth;
+    var gridTop = container.getBoundingClientRect().top + (window.pageYOffset || 0);
+    var padActions = container.parentNode.querySelector('.pad-actions');
+    var studyActions = document.getElementById('studyActions');
+    var reserved = (padActions ? padActions.offsetHeight + 6 : 0) + (studyActions ? studyActions.offsetHeight : 0) + 8;
+    var height = window.innerHeight - gridTop - reserved;
+    var best = { columns: Math.min(count, 2), size: 0 };
+    var columns;
+    var rows;
+    var size;
+
+    for (columns = 1; columns <= count; columns += 1) {
+      rows = Math.ceil(count / columns);
+      size = Math.min((width - gap * (columns - 1)) / columns, (height - gap * (rows - 1)) / rows, 330);
+      if (size > best.size) {
+        best = { columns: columns, size: size };
+      }
+    }
+    // Màn hình quá thấp (xoay ngang): giữ ô đủ lớn để viết, chấp nhận cuộn.
+    size = Math.floor(Math.max(best.size, 96));
+    container.style.gridTemplateColumns = 'repeat(' + String(best.columns) + ', ' + String(size) + 'px)';
+    container.style.justifyContent = 'center';
+  }
+
   function layoutColumns() {
     var count = pads.length;
-    var mobile = window.innerWidth < 570;
     var columns;
 
     if (!container || !count) {
@@ -302,17 +328,18 @@
 
     container.setAttribute('data-count', String(count));
 
+    if (window.matchMedia && window.matchMedia('(max-width: 720px)').matches) {
+      fitMobileGrid(count);
+      return;
+    }
+
     if (count === 1) {
-      container.style.gridTemplateColumns = mobile ? 'minmax(0, min(100%, 330px))' : 'minmax(0, 380px)';
+      container.style.gridTemplateColumns = 'minmax(0, 380px)';
       container.style.justifyContent = 'center';
       return;
     }
 
-    if (mobile) {
-      columns = count === 1 ? 1 : 2;
-    } else {
-      columns = Math.min(count, 4);
-    }
+    columns = Math.min(count, 4);
     container.style.gridTemplateColumns = 'repeat(' + String(columns) + ', minmax(0, 1fr))';
     container.style.justifyContent = 'stretch';
   }

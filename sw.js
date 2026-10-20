@@ -1,4 +1,4 @@
-var CACHE_NAME = 'hanzi-trainer-v10.3-ui-fix';
+var CACHE_NAME = 'hanzi-trainer-v10.4-fit-pads';
 var APP_SHELL = [
   './',
   './index.html',
