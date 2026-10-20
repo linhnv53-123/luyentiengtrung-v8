@@ -2517,11 +2517,18 @@ textarea:focus-visible {
   /* grid desktop đặt align-items:start, khi chuyển sang flex cột làm các khối co hẹp */
   .practice-workspace {
     align-items: stretch;
-    /* header + thanh tab + lề: khung luyện vừa đúng một màn hình, không cuộn thừa */
-    min-height: calc(100dvh - 124px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+    /* header + lề: khung luyện vừa đúng một màn hình, menu nằm ngay dưới */
+    min-height: calc(100dvh - 62px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
   }
   .brand-block > div { min-width: 0; }
   .brand-block h1 { overflow: hidden; text-overflow: ellipsis; }
+  /* Nhường chiều cao cho bảng viết: nút Phát âm lên dòng "Bài …", ẩn tiêu đề "Bảng viết" */
+  .card-topline { min-height: 32px; padding-right: 92px; }
+  .speak-button { position: absolute; top: 0; right: 0; margin: 0; min-height: 32px; }
+  .writing-header { display: none; }
+  /* Menu chức năng xuống cuối trang để phần luyện tập nằm ngay dưới header */
+  main { display: flex; flex-direction: column; }
+  .view-tabs { order: 1; margin: 8px 0 0; }
 }
 
 /* Mũi tên ▶ của <summary> nằm cùng dòng với tiêu đề */
