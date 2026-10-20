@@ -2511,3 +2511,19 @@ textarea:focus-visible {
     margin-top: 9px;
   }
 }
+
+/* V10.3: sửa bố cục di động */
+@media (max-width: 720px) {
+  /* grid desktop đặt align-items:start, khi chuyển sang flex cột làm các khối co hẹp */
+  .practice-workspace {
+    align-items: stretch;
+    /* header + thanh tab + lề: khung luyện vừa đúng một màn hình, không cuộn thừa */
+    min-height: calc(100dvh - 124px - env(safe-area-inset-top) - env(safe-area-inset-bottom));
+  }
+  .brand-block > div { min-width: 0; }
+  .brand-block h1 { overflow: hidden; text-overflow: ellipsis; }
+}
+
+/* Mũi tên ▶ của <summary> nằm cùng dòng với tiêu đề */
+.notes-tools-summary-title,
+.pinyin-group-summary-title { display: inline; }

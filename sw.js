@@ -1,4 +1,4 @@
-var CACHE_NAME = 'hanzi-trainer-v10.2-session-unlock';
+var CACHE_NAME = 'hanzi-trainer-v10.3-ui-fix';
 var APP_SHELL = [
   './',
   './index.html',
